@@ -2,22 +2,13 @@
 
 ## Types of Temperature Sensors
 
-| **Thermocouple**                       | **Thermistor**                                                          | **PT100**                                 |
-| -------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------- |
-| Range is very wide -270°C to +1400°C   | Range is small -30°C to +130°C                                          | Range is medium -200°C to +850°C          |
-| Output –mV increase with temp          | Output -resistance changes with temp, therefore, must convert to mV     | Output resistance increases linearly      |
-|  Stability is poor, linear             | Stability is poor, non-linear                                           | Stability is good, linear                 |
-| Very low sensitivity, accuracy is low  | Very high sensitivity output, large change in ohms, accuracy is medium  | Very high sensitivity , accuracy is high  |
-
-|<p align="center">
-<img src="images/Thermocpuple.png" width="60%"> </p>|
-
-<p align="center">
-<img src="images/Thermistor.png" width="60%">
-
-</p>| <p align="center">
-    <img src="images/PT100.png" width="60%">
-</p>|
+| **Thermocouple**                                        | **Thermistor**                                                          | **PT100**                                 |
+| ------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------- |
+| Range is very wide -270°C to +1400°C                    | Range is small -30°C to +130°C                                          | Range is medium -200°C to +850°C          |
+| Output –mV increase with temp                           | Output -resistance changes with temp, therefore, must convert to mV     | Output resistance increases linearly      |
+|  Stability is poor, linear                              | Stability is poor, non-linear                                           | Stability is good, linear                 |
+| Very low sensitivity, accuracy is low                   | Very high sensitivity output, large change in ohms, accuracy is medium  | Very high sensitivity , accuracy is high  |
+| <img src="images/Thermocouple.png" alt="Thermocouple">  | <img src="images/Thermistor.png" alt="Thermistor">                      | <img src="images/PT100.png" alt="PT100">  |
 
 ## Schematic of the Temperature Sensor Ciruit
 
