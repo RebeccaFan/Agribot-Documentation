@@ -3,6 +3,7 @@ ___
 
 The HC-SR04 Ultrasonic sensor component will be used to measure the level of the water in a tank. The data will be pass 
 onto the arduino nano. The code will be written on the software called Arduino IDE.
+
 ___
 <p align="center">
     <img src="images/Ultrasonic.png" width="40%">
@@ -19,3 +20,20 @@ ___
 <p align="center">
     <img src="images/1.PNG" width="60%">
 </p>
+
+{| class="wikitable" style="text-align: center;"
+!style="background: rgb(35, 88, 128);"|'''Pin Name'''
+!style="background: rgb(35, 88, 128);"|'''Arduino Pins'''
+|-
+|Vcc
+|5V
+|-
+|Trigger
+|Digital Pin 9 (D9)
+|-
+|Echo
+|Digital Pin 10 (D10)
+|-
+|Gnd
+|Ground
+|}
