@@ -2,13 +2,12 @@
 
 ## Types of Temperature Sensors
 
-| **Thermocouple**                          | **Thermistor**                                                          | **PT100**                            |
-| ----------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------ |
-| Range is very wide -270°C to +1400°C      | Range is small -30°C to +130°C                                          | Range is medium -200°C to +850°C     |
-| Output –mV increase with temp             | Output -resistance changes with temp, therefore, must convert to mV     | Output resistance increases linearly |
-|  Stability is poor, linear                | Stability is poor, non-linear                                           | Stability is good, linear            |
-| Very low sensitivity, accuracy is low     | Very high sensitivity output, large change in ohms, accuracy is medium  |
-| Very high sensitivity , accuracy is high  |
+| **Thermocouple**                       | **Thermistor**                                                          | **PT100**                                 |
+| -------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------- |
+| Range is very wide -270°C to +1400°C   | Range is small -30°C to +130°C                                          | Range is medium -200°C to +850°C          |
+| Output –mV increase with temp          | Output -resistance changes with temp, therefore, must convert to mV     | Output resistance increases linearly      |
+|  Stability is poor, linear             | Stability is poor, non-linear                                           | Stability is good, linear                 |
+| Very low sensitivity, accuracy is low  | Very high sensitivity output, large change in ohms, accuracy is medium  | Very high sensitivity , accuracy is high  |
 
 ## Schematic of the Temperature Sensor Ciruit
 
