@@ -4,7 +4,8 @@
 
 This site will give instructions on how to build and calibrate the required electrical systems for the Agribot Project. Each device will have its own page of instructions and a brief explaination of how the system works.
 
-[<h2>Ultrasonic Water Level Sensor</h2>](./ultrasonic.md)
+##Ultrasonic Water Level Sensor [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+
 To measure the water level in the tank an ultrasonic sensor was one of the possible options for measuring the level. The distance between the sensor and the water is measuered using a HC-S04 and that data is passed to an Arduino Nano and used to calculated the level of water left in the tank
 
 [<h2>PT100 Temperature Sensor</h2>](./temperature.md)
