@@ -73,7 +73,7 @@ delayMicroseconds(10);
 digitalWrite(trigPin, LOW);
 
 ```
-### pulseIN function and calculating distnace
+### pulseIN function and calculating distance
 pulseIn () function has 2 variables, the first entry in the bracket is the name of the echo pin (echoPin) and the second entry you can set it to on a HIGH or LOW. This function will read the travel time and put in the variable called duration.
 In the code, HIGH means that the pulseIn() function will wait for the pin to go HIGH. This is caused by the bounced of the sound wave. It will then start the timing, it will wait until the pin is LOW when the sound wave will end and stop the timing. It will then return the length of the pulse in microsecond.
 
