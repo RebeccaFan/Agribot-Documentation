@@ -21,19 +21,9 @@ ___
     <img src="images/1.PNG" width="60%">
 </p>
 
-{| class="wikitable" style="text-align: center;"
-!style="background: rgb(35, 88, 128);"|'''Pin Name'''
-!style="background: rgb(35, 88, 128);"|'''Arduino Pins'''
-|-
-|Vcc
-|5V
-|-
-|Trigger
-|Digital Pin 9 (D9)
-|-
-|Echo
-|Digital Pin 10 (D10)
-|-
-|Gnd
-|Ground
-|}
+**Pin Name**|**Arduino Pins**
+:-----:|:-----:
+Vcc|5V
+Trigger|Digital Pin 9 (D9)
+Echo|Digital Pin 10 (D10)
+Gnd|Ground
