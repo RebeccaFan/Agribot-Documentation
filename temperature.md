@@ -8,14 +8,15 @@
 | Output –mV increase with temp                           | Output -resistance changes with temp, therefore, must convert to mV     | Output resistance increases linearly      |
 |  Stability is poor, linear                              | Stability is poor, non-linear                                           | Stability is good, linear                 |
 | Very low sensitivity, accuracy is low                   | Very high sensitivity output, large change in ohms, accuracy is medium  | Very high sensitivity , accuracy is high  |
-| <img src="images/Thermocouple.png" alt="Thermocouple">  | <img src="images/Thermistor.png" alt="Thermistor">                      | <img src="images/PT100.png" alt="PT100">  |
+| <img src="images/Thermocouple.jpg" alt="Thermocouple">  | <img src="images/Thermistor.png" alt="Thermistor">                      | <img src="images/PT100.png" alt="PT100">  |
 
 ## Schematic of the Temperature Sensor Ciruit
 
-```
-Box
+The following is the schematic of the full ciricuit with the wheatstone bridge and pt100
 
-```
+<p align="center">
+    <img src="images/schematic.png" width="60%">
+</p>
 
 ## Excel for the PT100 and Wheatstone Bridge
 
