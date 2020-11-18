@@ -15,4 +15,6 @@ ___
 3|Echo|Echo pin is an Output pin. This pin goes high for a period of time which will be equal to the time taken for the US wave to return back to the sensor.
 4|Ground|This pin is connected to the Ground of the system.
 
-<img src="images/1.PNG" width="40%">
+<p align="center">
+    <img src="images/1.PNG" width="60%">
+</p>
