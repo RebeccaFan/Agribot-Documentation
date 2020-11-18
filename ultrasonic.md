@@ -16,5 +16,5 @@ ___
 4|Ground|This pin is connected to the Ground of the system.
 
 <p align="center">
-    <img src="images/ultraArduino.png" width="40%">
+    <img src="images/1.png" width="40%">
 </p>
