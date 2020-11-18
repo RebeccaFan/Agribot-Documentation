@@ -15,7 +15,8 @@
 The following is the schematic of the full ciricuit with the wheatstone bridge and pt100
 
 <p align="center">
-    <img src="images/schematic.PNG"  width="60% >
+    <img src="images/schematic.PNG" width="60%">
+ 
 </p>
 
 ## Excel for the PT100 and Wheatstone Bridge
