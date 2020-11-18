@@ -17,13 +17,15 @@ ___
 4|Ground|This pin is connected to the Ground of the system.
 
 ## Schematic of Ultrasonic Sensor
-<p align="center">
-    <img src="images/1.PNG" width="60%">
+<p align="left">
+    <img src="images/1.PNG" width="50%">
 </p>
 
-**Pin Name**|**Arduino Pins**
-:-----:|:-----:
-Vcc|5V
-Trigger|Digital Pin 9 (D9)
-Echo|Digital Pin 10 (D10)
-Gnd|Ground
+<p align="right">
+    **Pin Name**|**Arduino Pins**
+    :-----:|:-----:
+    Vcc|5V
+    Trigger|Digital Pin 9 (D9)
+    Echo|Digital Pin 10 (D10)
+    Gnd|Ground
+</p>
