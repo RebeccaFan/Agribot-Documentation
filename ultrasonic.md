@@ -23,6 +23,7 @@ ___
 
 The table below shows the pin name and their corresponding arduino pins. The trigger and echo pin could be
 changed into a different digital pins but ensure that the code in the Arduino IDE is modified with it.
+
 **Pin Name**|**Arduino Pins**
 :-----:|:-----:
 Vcc|5V
