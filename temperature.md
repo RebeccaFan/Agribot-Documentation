@@ -14,8 +14,10 @@ Before deciding to base the the temperature measurement system around the PT100,
 
 ### Reasons why PT100 is used
 
-- Most accurate sensors and covers a good range of temperature
-- Good longer-term stability and response time and has excellent linearity
+- It is one of the most accurate sensors becuase of its platinum material
+- It covers a good range of temperature
+- Good long-term stability and response time
+- The relationship between resistance and temperature is relatively linear
 - Relatively immune to electrical noise
 - Often used in industrial operations for atmospheric conditions
 
