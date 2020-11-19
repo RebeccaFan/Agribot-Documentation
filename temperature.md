@@ -10,6 +10,16 @@ Before deciding to base the the temperature measurement system around the PT100,
 | Output Unit: Milivolts (mV) \[linear\] | Output Unit: Ohms(Ω) \[non-linear\] | Output Unit: Ohms(Ω) \[linear\]        |
 | Poor Stability                         | Poor Stability                      | Decent Stability                       |
 | Very low sensitivity, low accuracy     | High sensitivity, decent accuracy   | Very high sensitivity , good accuracy  |
+| <img src="images/Thermocouple.jpg">    | <img src="images/Thermistor.png">   | <img src="images/PT100.png">           |
+
+### Reasons why PT100 is used
+
+- It is one of the most accurate sensors becuase of its platinum material
+- It covers a good range of temperature
+- Good long-term stability and response time
+- The relationship between resistance and temperature is relatively linear
+- Relatively immune to electrical noise
+- Often used in industrial operations for atmospheric conditions
 
 ### Required Temperature Range
 
