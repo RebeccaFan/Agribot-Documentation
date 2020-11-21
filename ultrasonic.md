@@ -77,7 +77,7 @@ delayMicroseconds(10);
 digitalWrite(trigPin, LOW)
 
 ```
-### pulseIN function and calculating distance
+### pulseIN function and calculating distance and percentage of water
 pulseIn () function has 2 variables, the first entry in the bracket is the name of the echo pin (echoPin) and the second entry you can set it to on a HIGH or LOW. This function will read the travel time and put in the variable called duration.
 In the code, HIGH means that the pulseIn() function will wait for the pin to go HIGH. This is caused by the bounced of the sound wave. It will then start the timing, it will wait until the pin is LOW when the sound wave will end and stop the timing. It will then return the length of the pulse in microsecond.
 
@@ -144,9 +144,9 @@ Serial.println("%");
 
 ```
 
-# Ultrasonic Demonstration
+## Ultrasonic Demonstration
 
-# Tutorial Video
-Link to a youtube video showing how ultrasonic sensor work and explained the how it calculated the value of the distance.
+## Tutorial Video
+Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
-[<img src="images/youtube.PNG" align="center" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
+[<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
