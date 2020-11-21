@@ -152,11 +152,9 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
 
 <p align="right">
     <img src="images/lcd.png" width="30%">
-</p>
-
-<p align="left">
-    <img src="images/led.png" width="30%">
-</p>
+</p> <p align="left">
+        <img src="images/led.png" width="30%">
+    </p>
 
 ## Tutorial Video
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
