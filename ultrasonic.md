@@ -148,9 +148,10 @@ Serial.println("%");
 
 ## Idea for added feature
 Incorporating **liquid-crystal display (LCD)** into the project would make it user for the user to know the distance and the percentage of the water without having to look at the serial monitor.
+
 Another great feature would be **light emitting diodes (L.E.D)**. This component could be use as an indication of the water level in a tank. Different colour would mean different level, for example if a green LED light up, this could mean that the water level is between 0 to 30%, orange LED indicates that water level is around 30 to 60% and lastly red LED means that the water level is at a critical level that if more water is added the tank could overflow. 
 
-<img src="images/lcd.png" width="30%">                          <img src="images/led.png" width="30%">
+<img src="images/lcd.png" width="30%"><img src="images/led.png" width="30%">
 
 ## Tutorial Video
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
