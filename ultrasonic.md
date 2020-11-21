@@ -149,4 +149,8 @@ Serial.println("%");
 # Tutorial Video
 Link to a youtube video showing how ultrasonic sensor work and explained the how it calculated the value of the distance.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
+<p align="center">
+    <img src="images/Ultrasonic.png" width="40%">
+    [![Ultrasonic](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)]
+
+</p>
