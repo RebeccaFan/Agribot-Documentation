@@ -21,6 +21,18 @@ Before deciding to base the the temperature measurement system around the PT100,
 - Relatively immune to electrical noise
 - Often used in industrial operations for atmospheric conditions
 
+### Block Diagram for PT100 ciruit
+
+<p align="center">
+    <img src="images/BlockDiagram.PNG">
+</p>
+
+### Schematic of PT100 ciruit
+
+<p align="center">
+    <img src="images/schematic.PNG">
+</p
+
 ### Required Temperature Range
 
 | **Tmin** | **Tmax** |
