@@ -146,6 +146,8 @@ Serial.println("%");
 
 ## Ultrasonic Demonstration
 
+[<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
+
 ## Ideas for additional features
 Incorporating **liquid-crystal display (LCD)** into the project would make it easier for the user to know the distance and the percentage of the water without having to look at the serial monitor.
 
