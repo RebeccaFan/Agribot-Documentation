@@ -143,11 +143,50 @@ Serial.println("%");
 }
 
 ```
+## Equipments for the demonstration
+To set up for the demonstration the required equipments are listed below:
+
++ HC-SR04 ultrasonic
++ Arduino Nano and cable 
++ Different colour wires (red(Vcc),black(ground),yellow(wires for connecting sensor to arduino))
+
++ Cylinder glass
++ Ruler
++ Sellotape
++ Computer (download Arduino IDE)
++ stick or extra ruler (to hold the circuit onto the glass)
+
+## Setup for the demonstration
+In this section, I will be listing in order the following steps that needs to be taken in order to build the circuit and do the demonstration
+
+### Initial installation of the circuit and code
+1. Collect all the equipments listed above.
+2. Place your arduino nano onto the breadboard aswell as the HC-SR04 ultrasonic sensor. For circuit building and wiring follow the figure and table shown on the "schematic of ultrasonic sensor" section of this page. 
+3. For clarity of the circuit, make sure that you use different colours for the wirings. i.e. red for Vcc, black for ground and yellor or other colour for the wiring of the ultrasonic sensor to the arduino nano digital pins.
+4. Downloand the Arduino IDE software from the Arduino website and copy the code above and verify and upload to the arduino nano.
+5. Once the code has been verified and uploaded, use a stick or an extra ruler to place the circuit on to the top of the glass. Use alot of sellotape until the setup is stable. Use the image below for reference as to how you can set it up. Take note that the end of the ultrasonic sensor (silver part) is align with edges at the top of the glass. i.e. the ultrasonic sensor is not inside of the glass or too high up or else inaccurate readings of the sensor will occur.
+6. Now that the initial installation is done follow the steps below to test the sensor.
+
+<p align="center">
+    <img src="images/glass.png" width="50%"><img src="images/glass2.png" width="50%">
+</p>
+
+### Testing
+1. Firstly, measure the height of the cylinder glass, use a ruler to do this. Ensure that you measure from inside of the glass to get the most accurate measurement of the height. Then modify the code according to the height. Code to be modified is shown below:
+```
+const float tankHeight = 13.2;  //INSERT TANK HEIGHT HERE//
+```
+2. Verify and upload the code again to the Arduino nano. Once done, look at the serial monitor in the Arduino IDE. This is where you're gonna see the "distance" (height) and the percentage of water. At this stage the distance should be the same or close to your measured height of the glass and percentage of water should be 0%.
+3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
+4. Lastly, calculate the percentage error by doing the formula below:
+```
+            Perncentage error = (Theoretical value - Experimental value / Theoritical value ) * 100 
+```
+5. Reference to the demonstration video below.
 
 ## Ultrasonic Demonstration
 
 [<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
-
 
 ## Ideas for additional features
 Incorporating **liquid-crystal display (LCD)** into the project would make it easier for the user to know the distance and the percentage of the water without having to look at the serial monitor.
