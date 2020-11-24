@@ -5,6 +5,8 @@ Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium a
 
 The hydrostatic pressure range in bar or pounds per square inch (psi) can be calculated by multiplying the liquid height in metres or feet by the specific gravity (SG) of the fluid and then multiplying this result by the converted number of bar or psi for 1 mH2O or 1 ftH2O.
 
+## Heading 2
+
 ## 24PC Sensor Data Sheet
 
 Using the sensor sheet it will provide as a guide to choose the which 24PC series is best depend on the pressure proportional to height of the tank.
