@@ -10,7 +10,7 @@ To measure the water level in the tank an ultrasonic sensor was one of the possi
 
 ## Pressure Water Level Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F3%2F3665.png&f=1&nofb=1" width="20px">](./pressure.md)
 
-To measure the water level in the tank an using a pressure sensor.
+To measure the water level in the tank an using a pressure sensor. Using the Honeywell 24PC pressure sensor series to find the pressure in the tank and calculate the volume of water in the tank.
 
 ## PT100 Temperature Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F3%2F3665.png&f=1&nofb=1" width="20px">](./temperature.md)
 
