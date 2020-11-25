@@ -56,3 +56,19 @@ Link to Datasheet: [24PC Datasheet](./24PC.md)
 </p>
 
 As you can see the circuit is very similar to the temperature sensor circuit. The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.
+
+## Loading of the sensor
+
+```
+Example 5% loading:
+
+Vin,amp = 0.95 Vout,sensor. i.e 95% is amplified
+
+    Vin,amp =  Vout,sensor \frac{Rin,amp}{Rin,amp + Rsensor)}
+
+
+(Rin,amp / (Rin,amp + R )
+
+
+
+```

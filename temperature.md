@@ -11,7 +11,7 @@ Before deciding to base the the temperature measurement system around the PT100,
 | Output Unit: Millivolts (mV) [linear] | Output Unit: Millivolts (mV) [linear] | Output Unit: Ohms(Ω) [non-linear] |     Output Unit: Ohms(Ω) [linear]     |
 |            Poor Stability             |            Poor Stability             |          Poor Stability           |           Decent Stability            |
 |  Very low sensitivity, low accuracy   |  Very low sensitivity, low accuracy   | High sensitivity, decent accuracy | Very high sensitivity , good accuracy |
-|      <img src="images/lm35.jpg">      |  <img src="images/Thermocouple.jpg">  | <img src="images/Thermistor.png"> |     <img src="images/PT100.png">      |
+|      <img src="images/lm35.png">      |  <img src="images/Thermocouple.jpg">  | <img src="images/Thermistor.png"> |     <img src="images/PT100.png">      |
 
 ### Reasons why PT100 is used
 
