@@ -74,8 +74,6 @@ Before deciding to base the the temperature measurement system around the PT100,
 |  -30 °C  |  50 °C   |
 | 243.15 K | 323.15 K |
 
-With a temperature range of just -30°C to +50°C
-
 ### Table of Unit Conversion Through System
 
 | T (°C) | T (K)  | Rth (Ω) | Vout (V) | Rescale | A/D (DU) |
