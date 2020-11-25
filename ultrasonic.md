@@ -1,6 +1,21 @@
 # Table of contents
 1. [Introduction](#Ultrasonic-Sensor)
-    1. [Schematic of Ultrasonic Sensor](##Schematic-of-Ultrasonic-Sensor)
+    1. [Schematic of Ultrasonic Sensor](#Schematic-of-Ultrasonic-Sensor)
+    2. [Calculation Explanations](#Calculation-Explanations)
+        1. [Calculating the distance](#Calculating-the-distance)
+        2. [Calculating the percentage of water](#Calculating-the-percentage-of-water)
+    3. [Code Explanation](#Code-Explanation)
+        1. [Defining the pins and the variables](#Defining-the-pins-and-the-variables)
+        2. [Setup section](#Setup-section)
+        3. [Loop section](#Loop-section)
+        4. [pulseIN function and calculating distance and percentage of water](#pulseIN-function-and-calculating-distance-and-percentage-of-water)
+        5. [Complete Code](#Complete-Code)
+    4. [Equipments for the demonstration](#Equipments-for-the-demonstration)
+        1. [Initial installation of the circuit and code](#Initial-installation-of-the-circuit-and-code)
+        2. [Testing](#Testing)
+    5. [Ultrasonic Demonstration](#Ultrasonic-Demonstration)
+    6. [Ideas for additional features](#Ideas-for-additional-features)
+    7. [Helpful Youtube Video](#Helpful-Youtube-Video)
 ___
 # Ultrasonic Sensor
 
@@ -208,7 +223,9 @@ In this section, I will be listing in order the following steps that needs to be
 ## Ultrasonic Demonstration
 This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
-[<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
+<p align = "center">
+    [<img src="images/demo.PNG" width="50%">](https://youtu.be/rX2mORhe_jk)
+</p>
 
 ## Ideas for additional features
 Incorporating **liquid-crystal display (LCD)** into the project would make it easier for the user to know the distance and the percentage of the water without having to look at the serial monitor.
@@ -219,7 +236,7 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
     <img src="images/lcd.png" width="30%"><img src="images/led.png" width="30%">
 </p>
 
-## Tutorial Video
+## Helpful Youtube Video
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
