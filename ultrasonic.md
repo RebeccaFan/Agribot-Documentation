@@ -223,9 +223,8 @@ In this section, I will be listing in order the following steps that needs to be
 ## Ultrasonic Demonstration
 This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
-<p align = "center">
-    [<img src="images/demo.PNG" width="50%">](https://youtu.be/rX2mORhe_jk)
-</p>
+[<img src="images/demo.PNG" width="50%">](https://youtu.be/rX2mORhe_jk)
+
 
 ## Ideas for additional features
 Incorporating **liquid-crystal display (LCD)** into the project would make it easier for the user to know the distance and the percentage of the water without having to look at the serial monitor.
