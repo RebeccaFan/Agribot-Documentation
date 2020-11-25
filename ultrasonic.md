@@ -241,5 +241,5 @@ Link to a youtube video showing how ultrasonic sensor works and explained how it
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
 
 <a href = "https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics" target = "_self" align="center"> 
-         <img src = "images/youtube.PNG"> 
+         <img src = "images/youtube.PNG" width = "60%"> 
 </a>
