@@ -179,11 +179,12 @@ const float tankHeight = 13.2;  //INSERT TANK HEIGHT HERE//
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
 4. Lastly, calculate the percentage error by doing the formula below:
 ```
-            Percentage error = (Theoretical value - Experimental value / Theoritical value ) * 100 
+            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
 ```
 5. Reference to the demonstration video in the next section.
 
 ## Ultrasonic Demonstration
+This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
 [<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
 
