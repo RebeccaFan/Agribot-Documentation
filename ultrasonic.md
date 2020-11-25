@@ -237,7 +237,7 @@ In this section, I will be listing in order the following steps that needs to be
 4. Lastly, calculate the percentage error by doing the formula below:
 
 ```
-                Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
+            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
 ```
 
 5. Reference to the demonstration video in the next section.
@@ -246,7 +246,7 @@ In this section, I will be listing in order the following steps that needs to be
 
 This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
-[<img src="images/demo.PNG" width="50%">](https://youtu.be/rX2mORhe_jk)
+[<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
 
 
 ## Ideas for additional features
@@ -263,3 +263,4 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
+
