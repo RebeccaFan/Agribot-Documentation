@@ -4,7 +4,7 @@ The Honeywell 24PC Series miniature pressure sensors provide reliable gage.
 Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium at a given point within the fluid, due to the force of gravity. Hydrostatic pressure increases in proportion to depth measured from the surface because of the increasing weight of fluid exerting downward force from above.
 
 <p align="center">
-    <img src="images/24PC.jpg" width="50%">
+    <img src="images/24PC.jpg" width="40%">
 </p>
 
 ## Piezoresistive pressure sensors
@@ -19,11 +19,22 @@ Piezoresistive sensors uses a strain gauge made of metal or a semiconducting mat
 
 ## Gauge and Absolute Pressure
 
-When measuring pressure, determining to use gauge or absolute pressure is important
+When measuring pressure, determining to use gauge or absolute pressure is important.
+
+#### Gauge Pressure
+
+Gauge pressure is measured in relation to ambient atmospheric pressure If the gauge pressure is higher than ambient pressure it is referred to as positive pressure and if the measured gauge pressure is below atmospheric pressure it is called negative or vacuum gauge pressure.
+
+#### Absolute Pressure
+
+Absolute pressure is the sum of gauge pressure and atmospheric pressure. The absolute pressure in fluids cannot be negative, so the smallest absolute pressure is zero.
+
+Generally if you want to measure a pressure that is influenced by changes in atmospheric pressure, like the level of liquid in an open tank for example; you would choose gauge pressure.
+If you want to measure pressures that are not influenced by changes in atmospheric pressure, e.g. leak testing a completely sealed, you would use an absolute pressure sensor.
 
 ## Units of Pressure
 
-SI unit for pressre is the Pascal, Pa.
+SI unit for pressure is the Pascal, Pa.
 Pa = N/m2 (Newton per square meter)
 1 bar = 100,000 Pa = 105 Pa
 1 atm = 101,325 Pa
@@ -38,8 +49,10 @@ Using the sensor sheet it will provide as a guide to choose the which 24PC serie
 
 Link to Datasheet: [24PC Datasheet](./24PC.md)
 
-## Build Ciruit with 24PC Sensor
+## Build Circuit with 24PC Sensor
 
 <p align="center">
     <img src="images/Pressure.PNG">
 </p>
+
+As you can see the circuit is very similar to the temperature sensor circuit. The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.

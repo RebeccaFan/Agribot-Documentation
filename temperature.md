@@ -4,30 +4,30 @@
 
 Before deciding to base the the temperature measurement system around the PT100, the various available options were considered. A thermocouple, US Sensors thermistor and PT100 were all considered. The table below compares the different properties of each of the three sensors
 
-| **Thermocouple**                       | **Thermistor**                      | **PT100**                              |
-| -------------------------------------- | ----------------------------------- | -------------------------------------- |
-| Large Range: -270°C to +1400°C         | Small Range: -30°C to +130°C        | Medium Range: -200°C to +850°C         |
-| Output Unit: Milivolts (mV) \[linear\] | Output Unit: Ohms(Ω) \[non-linear\] | Output Unit: Ohms(Ω) \[linear\]        |
-| Poor Stability                         | Poor Stability                      | Decent Stability                       |
-| Very low sensitivity, low accuracy     | High sensitivity, decent accuracy   | Very high sensitivity , good accuracy  |
-| <img src="images/Thermocouple.jpg">    | <img src="images/Thermistor.png">   | <img src="images/PT100.png">           |
+| **LM34**                               | **Thermocouple**                       | **Thermistor**                      | **PT100**                              |
+| -------------------------------------- | -------------------------------------- | ----------------------------------- | -------------------------------------- |
+| Large Range: -45°C to +148°C           | Large Range: -270°C to +1400°C         | Small Range: -30°C to +130°C        | Medium Range: -200°C to +850°C         |
+| Output Unit: Milivolts (mV) \[linear\] | Output Unit: Milivolts (mV) \[linear\] | Output Unit: Ohms(Ω) \[non-linear\] | Output Unit: Ohms(Ω) \[linear\]        |
+| Poor Stability                         | Poor Stability                         | Poor Stability                      | Decent Stability                       |
+| Very low sensitivity, low accuracy     | Very low sensitivity, low accuracy     | High sensitivity, decent accuracy   | Very high sensitivity , good accuracy  |
+| <img src="images/lm34.jpg">            | <img src="images/Thermocouple.jpg">    | <img src="images/Thermistor.png">   | <img src="images/PT100.png">           |
 
 ### Reasons why PT100 is used
 
-- It is one of the most accurate sensors becuase of its platinum material
+- It is one of the most accurate sensors because of its platinum material
 - It covers a good range of temperature
 - Good long-term stability and response time
 - The relationship between resistance and temperature is relatively linear
 - Relatively immune to electrical noise
 - Often used in industrial operations for atmospheric conditions
 
-### Block Diagram for PT100 ciruit
+### Block Diagram for PT100 circuit
 
 <p align="center">
     <img src="images/BlockDiagram.PNG">
 </p>
 
-## Schematic of PT100 ciruit
+## Schematic of PT100 circuit
 
 <p align="center">
     <img src="images/schematic.PNG">
