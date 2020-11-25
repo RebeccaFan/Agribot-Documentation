@@ -216,7 +216,7 @@ In this section, I will be listing in order the following steps that needs to be
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
 4. Lastly, calculate the percentage error by doing the formula below:
 ```
-                Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
+            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
 ```
 5. Reference to the demonstration video in the next section.
 
@@ -239,3 +239,7 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
+
+<a href = "https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics" target = "_self" align="center"> 
+         <img src = "images/youtube.PNG"> 
+</a>
