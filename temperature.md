@@ -24,13 +24,13 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Block Diagram for PT100 ciruit
 
 <p align="center">
-    <img src="images/BlockDiagram.PNG" width="50%">
+    <img src="images/BlockDiagram.PNG">
 </p>
 
 ## Schematic of PT100 ciruit
 
 <p align="center">
-    <img src="images/schematic.PNG" width="50%">
+    <img src="images/schematic.PNG">
 </p>
 
 ### Equipment for the circuit
@@ -51,19 +51,19 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Circuit for PT100 Temperature Sensor
 
 <p align="center">
-    <img src="images/PT100_Full.jpg" width="50%">
+    <img src="images/PT100_Full.jpg" width="60%">
 </p>
 
 ### Breadboard Close Up
 
 <p align="center">
-    <img src="images/PT100_breadb.jpg">
+    <img src="images/PT100_breadb.jpg" width="60%">
 </p>
 
 ### Breadboard connected to Arduino
 
 <p align="center">
-    <img src="images/arduino.jpg">
+    <img src="images/arduino.jpg" width="60%">
 </p>
 
 ### Required Temperature Range
