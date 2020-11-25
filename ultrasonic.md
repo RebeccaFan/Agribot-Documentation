@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Ultrasonic Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F15%2F15766.png&f=1&nofb=1" width="20px">](./index.md)
-=======
 # Table of contents
 1. [Introduction](#Ultrasonic-Sensor)
     1. [Schematic of Ultrasonic Sensor](#Schematic-of-Ultrasonic-Sensor)
@@ -21,7 +19,6 @@
     7. [Helpful Youtube Video](#Helpful-Youtube-Video)
 ___
 # Ultrasonic Sensor
->>>>>>> joy
 
 The HC-SR04 Ultrasonic sensor component will be used to measure the level of the water in a tank. The data will be pass
 onto the arduino nano. The code will be written on the software called Arduino IDE.
