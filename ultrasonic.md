@@ -149,7 +149,6 @@ To set up for the demonstration the required equipments are listed below:
 + HC-SR04 ultrasonic
 + Arduino Nano and cable 
 + Different colour wires (red(Vcc),black(ground),yellow(wires for connecting sensor to arduino))
-
 + Cylinder glass
 + Ruler
 + Sellotape
@@ -180,7 +179,7 @@ const float tankHeight = 13.2;  //INSERT TANK HEIGHT HERE//
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
 4. Lastly, calculate the percentage error by doing the formula below:
 ```
-            Perncentage error = (Theoretical value - Experimental value / Theoritical value ) * 100 
+            Percentage error = (Theoretical value - Experimental value / Theoritical value ) * 100 
 ```
 5. Reference to the demonstration video below.
 
