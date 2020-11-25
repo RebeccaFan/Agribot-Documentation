@@ -31,6 +31,24 @@ Trigger|Digital Pin 9 (D9)
 Echo|Digital Pin 10 (D10)
 Gnd|Ground
 
+## Calculation Explanations
+This section will explain the equations and calculations that were used in the code.
+### Calculating the distance
+In this example, if the height of the glass is 13.2cm and the speed of the sound is 340m/s or 0.034 cm/us the sound wave will need to travel 294us. But the value that you will get from the Echo pin will be double that number as the sound wave needs to travel forward and bounce backward. So to get the distance in cm we need to multiply the received travel time value from echo pin by 0.034 and divide the answer by 2. The code that does this calculation is:
+```
+distance= duration*0.034/2;
+```
+For a clearer explanation of the calculation refer to the diagram and the formula provided.
+<p align="center">
+    <img src="images/calcu.PNG" width="50%">
+</p>
+
+### Calculating the percentage of water
+To calculate the water percentage in the glass, the distance that you get from the calculation above is divided by the tank height, in this case 13.2, multiply the answer by 100. From this you will get the percentage of the empty space in the glass but since we want to know the percentage of water in the the glass you minus the answer from 100. The code that does this calculation is:
+```
+waterpercent = 100-(distance/tankHeight)*100;
+```
+
 ## Code Explanation
 Each block of the code will be explained here and the complete code will be provided at the end aswell as on the top right corner
 of the this and main page available for download.
