@@ -103,3 +103,41 @@ With a temperature range of just -30°C to +50°C
 |    Gain     | R1  | R2  | Rg  |
 | :---------: | :-: | :-: | :-: |
 | 24.89554462 | 2k  | 10k | 1k  |
+
+### Arduino Code
+
+```
+int vinPin = A0;
+int vin;
+float outDegC;
+
+void setup()
+{
+    Serial.begin(9600);
+
+void loop()
+{
+    delay(500);
+    //delay for half a second
+
+    vin = analogRead(vinPin);
+    //read in value from Arduino
+
+    outDegC = (vin * .0785) - 30;
+    //rescale back to degrees celsius
+    // (50 - (-30)) / 1019 bits = 0.785
+
+    Serial.print("Voltage In Bits: ");
+    Serial.print(vin);
+    Serial.print("\t\t\t");
+    // print out in voltage in bits on screen
+
+    Serial.print("Temperature: ");
+    Serial.print(outDegC);
+    Serial.print(" °C\t\t\t");
+    // print out in degrees on screen
+
+    Serial.println();
+}
+
+```
