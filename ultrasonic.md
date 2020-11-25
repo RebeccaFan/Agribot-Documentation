@@ -1,23 +1,25 @@
 # Ultrasonic Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F15%2F15766.png&f=1&nofb=1" width="20px">](./index.md)
+
 # Table of contents
+
 1. [Introduction](#ultrasonic-sensor)
-    1. [Schematic of Ultrasonic Sensor](#schematic-of-ultrasonic-sensor)
-    2. [Calculation Explanations](#calculation-explanations)
-        1. [Calculating the distance](#calculating-the-distance)
-        2. [Calculating the percentage of water](#calculating-the-percentage-of-water)
-    3. [Code Explanation](#code-explanation)
-        1. [Defining the pins and the variables](#defining-the-pins-and-the-variables)
-        2. [Setup section](#setup-section)
-        3. [Loop section](#loop-section)
-        4. [pulseIN function and calculating distance and percentage of water](#pulseIN-function-and-calculating-distance-and-percentage-of-water)
-        5. [Complete Code](#complete-Code)
-    4. [Equipments for the demonstration](#equipments-for-the-demonstration)
-        1. [Initial installation of the circuit and code](#Initial-installation-of-the-circuit-and-code)
-        2. [Testing](#testing)
-    5. [Ultrasonic Demonstration](#ultrasonic-demonstration)
-    6. [Ideas for additional features](#ideas-for-additional-features)
-    7. [Helpful Youtube Video](#helpful-youtube-video)
-___
+   1. [Schematic of Ultrasonic Sensor](#schematic-of-ultrasonic-sensor)
+   2. [Calculation Explanations](#calculation-explanations)
+      1. [Calculating the distance](#calculating-the-distance)
+      2. [Calculating the percentage of water](#calculating-the-percentage-of-water)
+   3. [Code Explanation](#code-explanation)
+      1. [Defining the pins and the variables](#defining-the-pins-and-the-variables)
+      2. [Setup section](#setup-section)
+      3. [Loop section](#loop-section)
+      4. [pulseIN function and calculating distance and percentage of water](#pulseIN-function-and-calculating-distance-and-percentage-of-water)
+      5. [Complete Code](#complete-Code)
+   4. [Equipments for the demonstration](#equipments-for-the-demonstration)
+      1. [Initial installation of the circuit and code](#Initial-installation-of-the-circuit-and-code)
+      2. [Testing](#testing)
+   5. [Ultrasonic Demonstration](#ultrasonic-demonstration)
+   6. [Ideas for additional features](#ideas-for-additional-features)
+   7. [Helpful Youtube Video](#helpful-youtube-video)
+
 # Ultrasonic Sensor
 
 The HC-SR04 Ultrasonic sensor component will be used to measure the level of the water in a tank. The data will be pass
@@ -53,19 +55,27 @@ changed into a different digital pins but ensure that the code in the Arduino ID
 |     Gnd      |        Ground        |
 
 ## Calculation Explanations
+
 This section will explain the equations and calculations that were used in the code.
+
 ### Calculating the distance
+
 In this example, if the height of the glass is 13.2cm and the speed of the sound is 340m/s or 0.034 cm/us the sound wave will need to travel 294us. But the value that you will get from the Echo pin will be double that number as the sound wave needs to travel forward and bounce backward. So to get the distance in cm we need to multiply the received travel time value from echo pin by 0.034 and divide the answer by 2. The code that does this calculation is:
+
 ```
                                         distance= duration*0.034/2;
 ```
+
 For a clearer explanation of the calculation refer to the diagram and the formula provided.
+
 <p align="center">
     <img src="images/calcu.PNG" width="60%">
 </p>
 
 ### Calculating the percentage of water
+
 To calculate the water percentage in the glass, the distance that you get from the calculation above is divided by the tank height, in this case 13.2, multiply the answer by 100. From this you will get the percentage of the empty space in the glass but since we want to know the percentage of water in the the glass you minus the answer from 100. The code that does this calculation is:
+
 ```
                                 waterpercent = 100-(distance/tankHeight)*100;
 ```
@@ -236,8 +246,9 @@ In this section, I will be listing in order the following steps that needs to be
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
 4. Reference to the demonstration video in the next section.
 5. Lastly, calculate the percentage error by doing the formula below:
+
 ```
-            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
+            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100
 ```
 
 ## Ultrasonic Demonstration
@@ -245,7 +256,6 @@ In this section, I will be listing in order the following steps that needs to be
 This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
 [<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
-
 
 ## Ideas for additional features
 
@@ -258,7 +268,7 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
 </p>
 
 ## Helpful Youtube Video
+
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
-
