@@ -37,7 +37,7 @@ of the this and main page available for download.
 
 ### Defining the pins and the variables
 This block of code defines the pins of the trigger and the echo pin. In this case they are the digital pins number 9 and 10 on the Arduino board. They are named as "trigPin" and "echoPin" for clarity of the code. 
-The variables are then defined. The travel time you'll get from the sensor is declared as a Long variable and named as "duration". An integer type is needed for the "distance" variable. "waterpercent" is set to integer type as this will be used for the calculation of the percentage of water in a tank. "tankHeight" is an constant float that is equal to value 13.2 as an example height of a tank, this could be later modified to a different tank height.
+The variables are then defined. The travel time you'll get from the sensor is declared as a long variable and named as "duration". A f.float type is needed for the "distance" variable. "waterpercent" is set to integer type as this will be used for the calculation of the percentage of water in a tank. "tankHeight" is an constant float that is equal to value 13.2 as an example height of a tank, this could be later modified to a different tank height.
 
 ```
 // defines pins numbers for trigger and echo
@@ -62,7 +62,7 @@ Serial.begin(9600);        // Starts the serial communication
 
 ```
 ### Loop section
-At the start of the loop, you need to ensure that the trigPin is clear to do this set the pin on a LOW state for 2 µs. To generate the Ultra sound wave, set the trigPin on a HIGH state for 10 µs.
+At the start of the loop, you need to ensure that the trigPin is clear, to do this set the pin on a LOW state for 2 µs. To generate the Ultra sound wave, set the trigPin on a HIGH state for 10 µs.
 
 ```
 void loop() {
@@ -79,10 +79,11 @@ digitalWrite(trigPin, LOW)
 ```
 ### pulseIN function and calculating distance and percentage of water
 pulseIn () function has 2 variables, the first entry in the bracket is the name of the echo pin (echoPin) and the second entry you can set it to on a HIGH or LOW. This function will read the travel time and put in the variable called duration.
-In the code, HIGH means that the pulseIn() function will wait for the pin to go HIGH. This is caused by the bounced of the sound wave. It will then start the timing, it will wait until the pin is LOW when the sound wave will end and stop the timing. It will then return the length of the pulse in microsecond.
+In the code, HIGH means that the pulseIn() function will wait for the pin to go HIGH. This is caused by the bounced of the sound wave. It will then start the timing and wait until the pin is LOW when the sound wave will end and stop the timing. It will then return the length of the pulse in microsecond.
 
-For the distance, the data in the duration variable will be multiplied by 0.032 and divide it by 2. The 0.032 value comes from the fact that the speed of the sound is 340 m/s or 0.034 cm/µs. It is divided by 2 since the data that you will get in the echoPin would be doubled as the sound wave needs to travel forward and bounce backward. So in order to get the distance in cm we need to multiply the received data in echoPin which is stored in "duration" variable by 0.034 and then divide it by 2. The distance value is then divided by the "tankHeight" which was set to 13.2, minus the answer from 100 and multiplied the calculated value to 100. This will be percentage of the water inside the tank. 
-The value of the distance in cm and the percentage of the water in the tank will be displayed on the serial monitor of the Arduino IDE.
+For the distance, the data in the duration variable will be multiplied by 0.032 and divide it by 2. The 0.032 value comes from the fact that the speed of the sound is 340 m/s or 0.034 cm/µs. It is divided by 2 since the data that you will get in the echoPin would be doubled as the sound wave needs to travel forward and bounce backward. So in order to get the distance in cm we need to multiply the received data in echoPin which is stored in "duration" variable by 0.034 and then divide it by 2. The distance value is then divided by the "tankHeight" which was set to 13.2, multiply it to 100 and minus the calculated value to 100. This will be percentage of the water inside the tank.
+The value of the distance in cm and the percentage of the water in the tank will be displayed on the serial monitor of the Arduino IDE. The "distance" value that is shown on the serial monitor is showing the empty space capacity inside the tank. 
+
 
 ```
 // Reads the echoPin, returns the sound wave travel time in microseconds
