@@ -223,7 +223,7 @@ In this section, I will be listing in order the following steps that needs to be
 ## Ultrasonic Demonstration
 This is the demonstration for the HC-SR04 following the steps taken highlighted above.
 
-[<img src="images/demo.PNG" width="50%">](https://youtu.be/rX2mORhe_jk)
+[<img src="images/demo.PNG" width="60%">](https://youtu.be/rX2mORhe_jk)
 
 
 ## Ideas for additional features
@@ -240,6 +240,3 @@ Link to a youtube video showing how ultrasonic sensor works and explained how it
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
 
-<a href = "https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics" target = "_self" align="center"> 
-     <img src = "images/youtube.PNG" width = "60%"> 
-</a>
