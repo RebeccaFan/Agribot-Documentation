@@ -71,9 +71,8 @@ To calculate the water percentage in the glass, the distance that you get from t
 ```
 
 ## Code Explanation
-
-Each block of the code will be explained here and the complete code will be provided at the end aswell as on the top right corner
-of the this and main page available for download.
+Each block of the code will be explained here and the complete code will be provided at the end. Click the "Download" to download the complete code.
+[Download ](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/Ultrasonic_code.zip)
 
 ### Defining the pins and the variables
 
