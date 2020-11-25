@@ -60,15 +60,39 @@ As you can see the circuit is very similar to the temperature sensor circuit. Th
 ## Loading of the sensor
 
 ```
-Example 5% loading:
+Example. 5% loading:
 
 Vin,amp = 0.95 Vout,sensor. i.e 95% is amplified
 
-    Vin,amp =  Vout,sensor \frac{Rin,amp}{Rin,amp + Rsensor)}
+    Vin,amp =  Vout,sensor (Rin,amp / Rin,amp + Rsensor)
 
 
-(Rin,amp / (Rin,amp + R )
+(Rin,amp / (Rin,amp + Rsensor) = 0.95
 
+Rin,amp = 0.95(Rin,amp + Rsensor)
+Rin,amp = 0.95Rin,amp + 0.95Rsensor
+Rin,amp - 0.95Rin,amp = 0.95Rsensor
 
+Rin,amp (1 - 0.95) = 0.95Rsensor
+Rin,amp = 0.95/0.05 Rsensor
+Rin,amp = 19 Rsensor
+
+From Datasheet = Output Resistance is 5K Ohm
+
+Rin,amp = 19sensor * 5K = 95K Ohms
+
+Therefore in the differential amplifier = R1 + R2 = 95K Ohms
+=> R1 = R2 = 47.5K ohms
+
+For 1% loading
+Rin,amp = (0.99 / 1 - 0.99)Rsensor
+Rin,amp = 99Rsensor * 5K = 495K Ohms
+
+Therefore in the differential amplifier = R1 + R2 = 495K Ohms
+=> R1 = R2 = 247.5K ohms
+
+```
+
+```
 
 ```
