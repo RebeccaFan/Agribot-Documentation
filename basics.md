@@ -13,7 +13,7 @@ A standard bread board is layed out in two halves with a each half having 5 inne
 To connect resistors or any other components in a parallel configuration both legs of the compenent must but in holes in the same row. However for connecting them in a series configuration only one leg of each component must share a row. This can be achieved in many ways, the diagram below shows a basic demonstration of this although it takes up quite some space.
 
 <p align="center">
-    <img src="images/SeriesPara.jpeg" width="40%">
+    <img src="images/SeriesPara.png" width="35%">
 </p>
 
 ## Resistors Values
@@ -23,7 +23,7 @@ Resistors are marked with different colours to show what their resistance is. Th
 [Resistor Colour Code Calculator](https://www.digikey.co.uk/en/resources/conversion-calculators/conversion-calculator-resistor-color-code)
 
 <p align="center">
-    <img src="images/ResistorColourCodes.jpeg" width="40%">
+    <img src="images/ResistorColourCodes.jpg" width="52%">
 </p>
 
 ## Arduino
@@ -31,7 +31,7 @@ Resistors are marked with different colours to show what their resistance is. Th
 The [Arduino IDE](https://www.arduino.cc/en/software) can be used for writing, compiling and uploading your arduino code to your arduino board. When you're ready to upload your code to the board open the code inside the Arduino IDE and plug your Arduino into the your PC over USB. To idenify what port the arduino is on Windows open Device Manager and look for the `Ports (Com & LPT)` tab and expand it. In here look for your Arduino device. It maybe listed as a USB-SERIAL device.
 
 <p align="center">
-    <img src="images/DeviceMgmt.png" width="40%">
+    <img src="images/DeviceMgmt.png" width="70%">
 </p>
 
 Make a note of the port number beside the device, in this example it happens to be on `COM4`. Back in the Arduino IDE open the tools drop down menu. There are 3 settings here to be changed: `Board`, `Processor`, `Port`
@@ -43,16 +43,19 @@ Make a note of the port number beside the device, in this example it happens to 
 First looking at the Board menu. Open this tab and select the board you are using from the menu. In this example the Arduino Nano was being used. Next opening the Processor tab from here select the appropriate processor for your board. **Note:** In most cases when using the Arduino Nano you will want to choose the `ATmega328P (Old Bootloader)`. Finally open the Port tab and the chose the port number matching to the one you noted earlier.
 
 <p align="center">
-    <img src="images/boards.png" width="40%">
+    <img src="images/boards.png" width="20%">  
+</p>
+
+<p align="center">
     <img src="images/proc.png" width="40%">
-    <img src="images/port.png" width="40%">
+    <img src="images/port.png" width="20%">
 </p>
 
 From here everything should all be set up. To compile click the arrow icon beside the check mark at the top of the Arduino IDE window. From here the code should compile and be uploaded. To view the progress of the process check the green bar and terminal window at the bottom of the screen. Any errors will show up here. If everything was compiled and uploaded correctly there will be a message saying `Done uploading`
 
 <p>
     <img src="images/compile.png" width="40%">
-    <img src="images/doneUpload.png" width="40%">
+    <img src="images/doneUpload.png" width="50%">
 </p>
 
 [Return To Homepage](./index.md)
