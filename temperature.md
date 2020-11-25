@@ -2,15 +2,16 @@
 
 ## Types of Temperature Sensors
 
-Before deciding to base the the temperature measurement system around the PT100, the various available options were considered. A thermocouple, US Sensors thermistor and PT100 were all considered. The table below compares the different properties of each of the three sensors
+Before deciding to base the the temperature measurement system around the PT100, the various available options were considered. A LM35, thermocouple, US Sensors thermistor and PT100 were all considered. The table below compares the different properties of each of the sensors:
 
-| **LM34**                               | **Thermocouple**                       | **Thermistor**                      | **PT100**                              |
-| -------------------------------------- | -------------------------------------- | ----------------------------------- | -------------------------------------- |
-| Large Range: -45°C to +148°C           | Large Range: -270°C to +1400°C         | Small Range: -30°C to +130°C        | Medium Range: -200°C to +850°C         |
-| Output Unit: Milivolts (mV) \[linear\] | Output Unit: Milivolts (mV) \[linear\] | Output Unit: Ohms(Ω) \[non-linear\] | Output Unit: Ohms(Ω) \[linear\]        |
-| Poor Stability                         | Poor Stability                         | Poor Stability                      | Decent Stability                       |
-| Very low sensitivity, low accuracy     | Very low sensitivity, low accuracy     | High sensitivity, decent accuracy   | Very high sensitivity , good accuracy  |
-| <img src="images/lm34.jpg">            | <img src="images/Thermocouple.jpg">    | <img src="images/Thermistor.png">   | <img src="images/PT100.png">           |
+|               **LM35**                |           **Thermocouple**            |          **Thermistor **          |               **PT100**               |
+| :-----------------------------------: | :-----------------------------------: | :-------------------------------: | :-----------------------------------: |
+|                                       |                                       |
+|     Small Range: -55°C to +150°C      |    Large Range: -270°C to +1400°C     |   Small Range: -30°C to +130°C    |    Medium Range: -200°C to +850°C     |
+| Output Unit: Millivolts (mV) [linear] | Output Unit: Millivolts (mV) [linear] | Output Unit: Ohms(Ω) [non-linear] |     Output Unit: Ohms(Ω) [linear]     |
+|            Poor Stability             |            Poor Stability             |          Poor Stability           |           Decent Stability            |
+|  Very low sensitivity, low accuracy   |  Very low sensitivity, low accuracy   | High sensitivity, decent accuracy | Very high sensitivity , good accuracy |
+|      <img src="images/lm35.jpg">      |  <img src="images/Thermocouple.jpg">  | <img src="images/Thermistor.png"> |     <img src="images/PT100.png">      |
 
 ### Reasons why PT100 is used
 
