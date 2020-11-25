@@ -14,7 +14,7 @@ Piezoresistive pressure sensors are among the most common types of pressure sens
 Piezoresistive sensors uses a strain gauge made of metal or a semiconducting material that changes its electrical resistance when it is stretched. The strain gauge can be attached to a diaphragm that recognises a change in resistance when the sensor element is deformed. The change in resistance is converted to an output signal.
 
 <p align="center">
-    <img src="images/Piezo.pjg">
+    <img src="images/Piezo.jpg">
 </p>
 
 ## 24PC Sensor Data Sheet
