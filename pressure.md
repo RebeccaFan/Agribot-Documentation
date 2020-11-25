@@ -4,7 +4,7 @@ The Honeywell 24PC Series miniature pressure sensors provide reliable gage.
 Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium at a given point within the fluid, due to the force of gravity. Hydrostatic pressure increases in proportion to depth measured from the surface because of the increasing weight of fluid exerting downward force from above.
 
 <p align="center">
-    <img src="images/24PC.jpg" width="40%">
+    <img src="images/24PC.jpg" width="30%">
 </p>
 
 ## Piezoresistive pressure sensors
@@ -34,14 +34,14 @@ If you want to measure pressures that are not influenced by changes in atmospher
 
 ## Units of Pressure
 
-SI unit for pressure is the Pascal, Pa.
-Pa = N/m2 (Newton per square meter)
-1 bar = 100,000 Pa = 105 Pa
-1 atm = 101,325 Pa
-1 psi = 6895 Pa
-1 torr = 1 mmHg = 133.3 Pa
-1 inch of water = 249 Pa (P=ρgh = 1000 x 9.81 x 0.0254)
-P = pgh, P = Pressure, p =density of the liquid, g = acceleration due to gravity, h = height of liquid
+- SI unit for pressure is the Pascal, Pa.
+- Pa = N/m2 (Newton per square meter)
+- 1 bar = 100,000 Pa = 105 Pa
+- 1 atm = 101,325 Pa
+- 1 psi = 6895 Pa
+- 1 torr = 1 mmHg = 133.3 Pa
+- 1 inch of water = 249 Pa (P=ρgh = 1000 x 9.81 x 0.0254)
+- P = pgh, P = Pressure, p =density of the liquid, g = acceleration due to gravity, h = height of liquid
 
 ## 24PC Sensor Data Sheet
 
@@ -56,3 +56,39 @@ Link to Datasheet: [24PC Datasheet](./24PC.md)
 </p>
 
 As you can see the circuit is very similar to the temperature sensor circuit. The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.
+
+## Loading of the sensor
+
+```
+Example. 5% loading:
+
+Vin,amp = 0.95 Vout,sensor. i.e 95% is amplified
+
+    Vin,amp =  Vout,sensor (Rin,amp / Rin,amp + Rsensor)
+
+
+(Rin,amp / (Rin,amp + Rsensor) = 0.95
+
+Rin,amp = 0.95(Rin,amp + Rsensor)
+Rin,amp = 0.95Rin,amp + 0.95Rsensor
+Rin,amp - 0.95Rin,amp = 0.95Rsensor
+
+Rin,amp (1 - 0.95) = 0.95Rsensor
+Rin,amp = 0.95/0.05 Rsensor
+Rin,amp = 19 Rsensor
+
+From Datasheet = Output Resistance is 5K Ohm
+
+Rin,amp = 19sensor * 5K = 95K Ohms
+
+Therefore in the differential amplifier = R1 + R2 = 95K Ohms
+=> R1 = R2 = 47.5K ohms
+
+For 1% loading
+Rin,amp = (0.99 / 1 - 0.99)Rsensor
+Rin,amp = 99Rsensor * 5K = 495K Ohms
+
+Therefore in the differential amplifier = R1 + R2 = 495K Ohms
+=> R1 = R2 = 247.5K ohms
+
+```
