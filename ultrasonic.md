@@ -71,9 +71,8 @@ To calculate the water percentage in the glass, the distance that you get from t
 ```
 
 ## Code Explanation
-
-Each block of the code will be explained here and the complete code will be provided at the end aswell as on the top right corner
-of the this and main page available for download.
+Each block of the code will be explained here and the complete code will be provided at the end. Click the "Download" to download the complete code.
+[Download ](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/Ultrasonic_code.zip)
 
 ### Defining the pins and the variables
 
@@ -234,13 +233,11 @@ In this section, I will be listing in order the following steps that needs to be
 
 2. Verify and upload the code again to the Arduino Nano. Once done, look at the serial monitor in the Arduino IDE. This is where you're gonna see the "distance" (height) and the percentage of water. At this stage the distance should be the same or close to your measured height of the glass and percentage of water should be 0%.
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
-4. Lastly, calculate the percentage error by doing the formula below:
-
+4. Reference to the demonstration video in the next section.
+5. Lastly, calculate the percentage error by doing the formula below:
 ```
             Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
 ```
-
-5. Reference to the demonstration video in the next section.
 
 ## Ultrasonic Demonstration
 
