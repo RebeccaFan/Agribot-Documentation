@@ -2,21 +2,21 @@
 # Table of contents
 1. [Introduction](#ultrasonic-sensor)
     1. [Schematic of Ultrasonic Sensor](#schematic-of-ultrasonic-sensor)
-    2. [Calculation Explanations](#Calculation-Explanations)
-        1. [Calculating the distance](#Calculating-the-distance)
-        2. [Calculating the percentage of water](#Calculating-the-percentage-of-water)
-    3. [Code Explanation](#Code-Explanation)
-        1. [Defining the pins and the variables](#Defining-the-pins-and-the-variables)
-        2. [Setup section](#Setup-section)
-        3. [Loop section](#Loop-section)
+    2. [Calculation Explanations](#calculation-explanations)
+        1. [Calculating the distance](#calculating-the-distance)
+        2. [Calculating the percentage of water](#calculating-the-percentage-of-water)
+    3. [Code Explanation](#code-explanation)
+        1. [Defining the pins and the variables](#defining-the-pins-and-the-variables)
+        2. [Setup section](#setup-section)
+        3. [Loop section](#loop-section)
         4. [pulseIN function and calculating distance and percentage of water](#pulseIN-function-and-calculating-distance-and-percentage-of-water)
-        5. [Complete Code](#Complete-Code)
-    4. [Equipments for the demonstration](#Equipments-for-the-demonstration)
+        5. [Complete Code](#complete-Code)
+    4. [Equipments for the demonstration](#equipments-for-the-demonstration)
         1. [Initial installation of the circuit and code](#Initial-installation-of-the-circuit-and-code)
-        2. [Testing](#Testing)
-    5. [Ultrasonic Demonstration](#Ultrasonic-Demonstration)
-    6. [Ideas for additional features](#Ideas-for-additional-features)
-    7. [Helpful Youtube Video](#Helpful-Youtube-Video)
+        2. [Testing](#testing)
+    5. [Ultrasonic Demonstration](#ultrasonic-demonstration)
+    6. [Ideas for additional features](#ideas-for-additional-features)
+    7. [Helpful Youtube Video](#helpful-youtube-video)
 ___
 # Ultrasonic Sensor
 
@@ -237,11 +237,7 @@ In this section, I will be listing in order the following steps that needs to be
 4. Lastly, calculate the percentage error by doing the formula below:
 
 ```
-<<<<<<< HEAD
-            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100
-=======
                 Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
->>>>>>> joy
 ```
 
 5. Reference to the demonstration video in the next section.
@@ -263,12 +259,7 @@ Another great feature would be **light emitting diodes (L.E.D)**. This component
     <img src="images/lcd.png" width="30%"><img src="images/led.png" width="30%">
 </p>
 
-<<<<<<< HEAD
-## Tutorial Video
-
-=======
 ## Helpful Youtube Video
->>>>>>> joy
 Link to a youtube video showing how ultrasonic sensor works and explained how it calculated the value of the distance.
 
 [<img src="images/youtube.PNG" width="60%">](https://www.youtube.com/watch?v=ZejQOX69K5M&ab_channel=HowToMechatronics)
