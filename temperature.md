@@ -24,13 +24,13 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Block Diagram for PT100 ciruit
 
 <p align="center">
-    <img src="images/BlockDiagram.PNG">
+    <img src="images/BlockDiagram.PNG" width="50%">
 </p>
 
 ## Schematic of PT100 ciruit
 
 <p align="center">
-    <img src="images/schematic.PNG">
+    <img src="images/schematic.PNG" width="50%">
 </p>
 
 ### Equipment for the circuit
@@ -51,7 +51,7 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Circuit for PT100 Temperature Sensor
 
 <p align="center">
-    <img src="images/PT100_Full.jpg">
+    <img src="images/PT100_Full.jpg" width="50%">
 </p>
 
 ### Breadboard Close Up
