@@ -4,7 +4,7 @@ The Honeywell 24PC Series miniature pressure sensors provide reliable gage.
 Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium at a given point within the fluid, due to the force of gravity. Hydrostatic pressure increases in proportion to depth measured from the surface because of the increasing weight of fluid exerting downward force from above.
 
 <p align="center">
-    <img src="images/24PC.jpg">
+    <img src="images/24PC.jpg" width="60%">
 </p>
 
 ## Piezoresistive pressure sensors
