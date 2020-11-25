@@ -27,11 +27,44 @@ Before deciding to base the the temperature measurement system around the PT100,
     <img src="images/BlockDiagram.PNG">
 </p>
 
-### Schematic of PT100 ciruit
+## Schematic of PT100 ciruit
 
 <p align="center">
     <img src="images/schematic.PNG">
-</p
+</p>
+
+### Equipment for the circuit
+
+- Breadboards
+- Arduino Nano
+- 2 wire PT100
+- 10K Ohm Potentiometer
+- LM324 Chip
+- x4 200 Ohm Resistor
+- x4 10 Ohm Resistor
+- x2 100 Ohm Resistor
+- x2 47 Ohm Resistor
+- x4 1M Ohm Resistor
+- x2 470K Ohm Resistor
+- Jumper Wires
+
+### Circuit for PT100 Temperature Sensor
+
+<p align="center">
+    <img src="images/PT100_Full.jpg" width="60%">
+</p>
+
+### Breadboard Close Up
+
+<p align="center">
+    <img src="images/PT100_breadb.jpg" width="60%">
+</p>
+
+### Breadboard connected to Arduino
+
+<p align="center">
+    <img src="images/arduino.jpg" width="60%">
+</p>
 
 ### Required Temperature Range
 
