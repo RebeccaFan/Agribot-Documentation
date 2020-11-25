@@ -1,6 +1,6 @@
 # Table of contents
-1. [Introduction](#Ultrasonic Sensor)
-    1. [Schematic of Ultrasonic Sensor](##Schematic of Ultrasonic Sensor)
+1. [Introduction](#Ultrasonic-Sensor)
+    1. [Schematic of Ultrasonic Sensor](##Schematic-of-Ultrasonic-Sensor)
 ___
 # Ultrasonic Sensor
 
