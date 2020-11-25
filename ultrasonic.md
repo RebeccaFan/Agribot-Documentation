@@ -37,7 +37,7 @@ of the this and main page available for download.
 
 ### Defining the pins and the variables
 This block of code defines the pins of the trigger and the echo pin. In this case they are the digital pins number 9 and 10 on the Arduino board. They are named as "trigPin" and "echoPin" for clarity of the code. 
-The variables are then defined. The travel time you'll get from the sensor is declared as a long variable and named as "duration". A f.float type is needed for the "distance" variable. "waterpercent" is set to integer type as this will be used for the calculation of the percentage of water in a tank. "tankHeight" is an constant float that is equal to value 13.2 as an example height of a tank, this could be later modified to a different tank height.
+The variables are then defined. The travel time you'll get from the sensor is declared as a long variable and named as "duration". A float type is needed for the "distance" variable. "waterpercent" is set to integer type as this will be used for the calculation of the percentage of water in a tank. "tankHeight" is an constant float that is equal to value 13.2 as an example height of a tank, this could be later modified to a different tank height.
 
 ```
 // defines pins numbers for trigger and echo
