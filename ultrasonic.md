@@ -1,3 +1,6 @@
+# Table of contents
+1. [Introduction](#Ultrasonic Sensor)
+    1. [Schematic of Ultrasonic Sensor](##Schematic of Ultrasonic Sensor)
 ___
 # Ultrasonic Sensor
 
@@ -36,7 +39,7 @@ This section will explain the equations and calculations that were used in the c
 ### Calculating the distance
 In this example, if the height of the glass is 13.2cm and the speed of the sound is 340m/s or 0.034 cm/us the sound wave will need to travel 294us. But the value that you will get from the Echo pin will be double that number as the sound wave needs to travel forward and bounce backward. So to get the distance in cm we need to multiply the received travel time value from echo pin by 0.034 and divide the answer by 2. The code that does this calculation is:
 ```
-                                distance= duration*0.034/2;
+                                        distance= duration*0.034/2;
 ```
 For a clearer explanation of the calculation refer to the diagram and the formula provided.
 <p align="center">
@@ -192,13 +195,13 @@ In this section, I will be listing in order the following steps that needs to be
 ### Testing
 1. Firstly, measure the height of the cylinder glass, use a ruler to do this. Ensure that you measure from inside of the glass to get the most accurate measurement of the height. Then modify the code according to the height. Code to be modified is shown below:
 ```
-const float tankHeight = 13.2;  //INSERT TANK HEIGHT HERE//
+                 const float tankHeight = 13.2;  //INSERT TANK HEIGHT HERE//
 ```
 2. Verify and upload the code again to the Arduino Nano. Once done, look at the serial monitor in the Arduino IDE. This is where you're gonna see the "distance" (height) and the percentage of water. At this stage the distance should be the same or close to your measured height of the glass and percentage of water should be 0%.
 3. Fill up the glass with water and take note of the height of the water. In this way you can measure the percentage error. On the serial monitor the "distance" is showing the empty space capacity of the glass and the percentage of the water inside.
 4. Lastly, calculate the percentage error by doing the formula below:
 ```
-            Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
+                Percentage error = (Theoretical value - Experimental value / Theoretical value ) * 100 
 ```
 5. Reference to the demonstration video in the next section.
 
