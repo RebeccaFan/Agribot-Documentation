@@ -3,13 +3,25 @@
 The Honeywell 24PC Series miniature pressure sensors provide reliable gage.
 Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium at a given point within the fluid, due to the force of gravity. Hydrostatic pressure increases in proportion to depth measured from the surface because of the increasing weight of fluid exerting downward force from above.
 
-The hydrostatic pressure range in bar or pounds per square inch (psi) can be calculated by multiplying the liquid height in metres or feet by the specific gravity (SG) of the fluid and then multiplying this result by the converted number of bar or psi for 1 mH2O or 1 ftH2O.
+<p align="center">
+    <img src="images/24PC.jpg">
+</p>
+
+## Piezoresistive pressure sensors
+
+Piezoresistive pressure sensors are among the most common types of pressure sensors. They use the change in electrical resistance of a material when stretched to measure the pressure.
+
+Piezoresistive sensors uses a strain gauge made of metal or a semiconducting material that changes its electrical resistance when it is stretched. The strain gauge can be attached to a diaphragm that recognises a change in resistance when the sensor element is deformed. The change in resistance is converted to an output signal.
+
+<p align="center">
+    <img src="images/Piezo.pjg">
+</p>
 
 ## 24PC Sensor Data Sheet
 
 Using the sensor sheet it will provide as a guide to choose the which 24PC series is best depend on the pressure proportional to height of the tank.
 
-[24PC Datasheet](./24PC.md)
+Link to Datasheet: [24PC Datasheet](./24PC.md)
 
 ## Build Ciruit with 24PC Sensor
 
