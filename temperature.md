@@ -31,7 +31,7 @@ Before deciding to base the the temperature measurement system around the PT100,
 - The block diagram for this circuit, the temp range is -30 to 50, using the PT100 tables it equals to 88.22 to 119.40 ohms. K1 is the sensitivity of the Pt100. For a PT100 sensor, a 1 °C temperature change will cause a 0.384 ohm change in resistance.
 - The values from the PT100 will go to a Wheatstone bridge which will calculate them to 0 to 200mV. K2 is the change in mV from the Wheatstone bridge output per ohm in the PT100.
 - From there it needs to be amplified to achieve the output of the Arduino. K3 is the gain of 25 is needed.
-- It goes into the A/D converter to convert V to Digital Units. For a 10 bit converter it will have values from 0 to 1023. K3 is the sensitivity of the Arduino which is a constant of 204.6 digital units per volt.
+- It goes into the A/D converter to convert V to Digital Units. For a 10 bit converter it will have values from 0 to 1023. K4 is the sensitivity of the Arduino which is a constant of 204.6 digital units per volt.
 - This will need to rescaled to get back to degrees Celsius units,  
   K5 is the change per digital unit will be a change in 0.78 degrees Celsius.
 
