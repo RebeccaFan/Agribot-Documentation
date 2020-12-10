@@ -99,6 +99,44 @@ With a temperature range of just -30°C to +50°C
 | :--: | :---: | :---: | :---: |
 | 4.71 | 505.8 | 505.8 | 88.22 |
 
+```
+Equations:
+Bridge equation:
+Vout = Vs(Rth/Rth+R2 - R3/R3+R1)
+
+Where R1 = R2 = R
+Where Rth = PT100 at highest temp -30 °C = 119.40 ohm
+Where R3 = PT100 at highest temp 50 °C = 88.22 ohm
+
+0.2 = 4.71(119.40/119.40+R - 88.22/88.22+R)
+
+Rearrange the equation to solve for R.
+
+Divide both sides by 4.71:
+
+0.042 = 119.40/119.40+R - 88.22/88.22+R
+
+Cross multiply:
+
+0.042 = 119.40(88.22+R) - 88.22(119.40+R) / (119.40+R)(88.22+R)
+
+0.042 = (119.40*R - 88.22*R) / 119.40*88.22+R * 88.22+119.4 *R +R^2)
+
+0.042 = 31.18*R / 119.40*88.22+R * 88.22+119.4 *R +R^2)
+
+0.042 = 31.18R/10,533.47 +207.62R + R^2
+
+0.042(10,533.47 +207.62R + R^2) = 31.18R
+442.41+8.72R+0.042R^2 = 31.18R
+0.042R^2 -22.46R +442.41 = 0
+
+Use -b formula to solve for R:
+
+R = 514.28
+```
+
+The potentiometer must be configured to 88.22.
+
 ### Amplifier Properties
 
 |    Gain     | R1  | R2  | Rg  |
