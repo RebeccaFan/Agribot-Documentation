@@ -57,9 +57,9 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 2. Note the Rth of the minimum, middle and maximum degrees. For example, refering to the excel sheet below -30 degC(min) is 191585ohms, 10 degC(middle) is 19968ohms and 50 degC (max) is 3643ohms. 
 3. Substitute this value in the equations below:
 ```
-<p align="center">
-    <img src="images/equation.PNG" width="20%">
-</p>
+                    0 = x(1/(1+(MinimumRth/y))-1/(1+z))
+                    0.5 = x(1/(1+(MiddleRth/y))-1/(1+z))
+                    1 = x(1/(1+(MaximumRth/y))-1/(1+z))
 ```
 4. Use wolframalpha website here and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
