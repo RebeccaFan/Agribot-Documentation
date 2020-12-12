@@ -1,3 +1,5 @@
+# Thermistor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F15%2F15766.png&f=1&nofb=1" width="20px">](./index.md)
+
 # Table of contents
 1. [Introduction](#Thermistor)
     1. [Reasons to use Thermistor](#reasons-to-use-thermistor)
@@ -22,12 +24,12 @@ The type of the thermistor that we are going to be using the NTC thermistor USP1
 
 ## Block Diagram
 <p align="center">
-    <img src="images/block.PNG" width="50%">
+    <img src="images/block.PNG" width="80%">
 </p>
 
 ## Schematic of Thermistor
 <p align="center">
-    <img src="images/schem.PNG" width="50%">
+    <img src="images/schem.PNG" width="80%">
 </p>
 ## Configurations for Excel
 Different Properties that was used in excel will be shown here. The excel sheet will also be available to download just click here.
@@ -50,17 +52,21 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 | :-----: | :-------: | :-----: | :-----: |
 | 1.35496 | 115031.12 | 16114.3 | 16114.3 |
 
-** Steps to get the 3 equations for simultaneous equations **
+**Steps to get the 3 equations for simultaneous equations**
 1. Get the temperature range required, and calculate the Rth of these temperature Range. In this example the temperature range is -30 to 50
 2. Note the Rth of the minimum, middle and maximum degrees. For example, refering to the excel sheet below -30 degC(min) is 191585ohms, 10 degC(middle) is 19968ohms and 50 degC (max) is 3643ohms. 
 3. Substitute this value in the equations below:
 <p align="center">
-    <img src="images/equation.PNG" width="50%">
+    <img src="images/equation.PNG" width="30%">
 </p>
 4. Use wolframalpha website here and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
 6. These will then give you all the resistor values for the wheatstone bridge.
 
+The diagram below will help visualise the location of the resistors in the circuit and briefly explain where each of the values were taken.
+<p align="center">
+    <img src="images/thermistorwheat.PNG" width="50%">
+</p>
 
 ## Final Excel Sheet 
 | T (°C) | T (K)  | Rth (Ω) | Vout (V) | A/D (DU) | Rescaled  |
@@ -79,9 +85,14 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 | 50.00  | 323.15 | 3643    |   0.94   |  192.05  |  14198.94 |
 
 ### Calculating the gain
-Gain required of 5 is need so:
-input resistance  = 100k ohms
-Feedback resistance is 500k ohms
+Gain of 5 is needed so:
+input resistance (values for R5 and R6)  = 200k ohms
+Feedback (values for R7 and R8) = 1000k ohms
+
+The diagram below is showing the location of the input resistance and the feedback. The 9V is the circuit is the battery that we used when we built the circuit on the breadboard. This can be seen on the diagram encircled in red. The 200k input resistance and the 1000k feedback would give us the 5 gain that we needed. 
+<p align="center">
+    <img src="images/thermampi.PNG" width="50%">
+</p>
 
 ## Equipments required
 - Thermistor
