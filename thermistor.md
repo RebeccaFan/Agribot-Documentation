@@ -56,18 +56,18 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 1. Get the temperature range required, and calculate the Rth of these temperature Range. In this example the temperature range is -30 to 50
 2. Note the Rth of the minimum, middle and maximum degrees. For example, refering to the excel sheet below -30 degC(min) is 191585ohms, 10 degC(middle) is 19968ohms and 50 degC (max) is 3643ohms. 
 3. Substitute this value in the equations below:
-''
-    <p align="center">
-        <img src="images/equation.PNG" width="10%">
-    </p>
-''
+```
+<p align="center">
+    <img src="images/equation.PNG" width="20%">
+</p>
+```
 4. Use wolframalpha website here and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
 6. These will then give you all the resistor values for the wheatstone bridge.
 
 The diagram below will help visualise the location of the resistors in the circuit and briefly explain where each of the values were taken.
 <p align="center">
-    <img src="images/thermistorwheat.PNG" width="70%">
+    <img src="images/thermistorwheat.PNG" width="60%">
 </p>
 
 ## Final Excel Sheet 
