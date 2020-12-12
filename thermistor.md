@@ -56,16 +56,18 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 1. Get the temperature range required, and calculate the Rth of these temperature Range. In this example the temperature range is -30 to 50
 2. Note the Rth of the minimum, middle and maximum degrees. For example, refering to the excel sheet below -30 degC(min) is 191585ohms, 10 degC(middle) is 19968ohms and 50 degC (max) is 3643ohms. 
 3. Substitute this value in the equations below:
-<p align="center">
-    <img src="images/equation.PNG" width="30%">
-</p>
+''
+    <p align="center">
+        <img src="images/equation.PNG" width="10%">
+    </p>
+''
 4. Use wolframalpha website here and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
 6. These will then give you all the resistor values for the wheatstone bridge.
 
 The diagram below will help visualise the location of the resistors in the circuit and briefly explain where each of the values were taken.
 <p align="center">
-    <img src="images/thermistorwheat.PNG" width="50%">
+    <img src="images/thermistorwheat.PNG" width="70%">
 </p>
 
 ## Final Excel Sheet 
@@ -86,8 +88,8 @@ The diagram below will help visualise the location of the resistors in the circu
 
 ### Calculating the gain
 Gain of 5 is needed so:
-input resistance (values for R5 and R6)  = 200k ohms
-Feedback (values for R7 and R8) = 1000k ohms
+- Input resistance (values for R5 and R6)  = 200k ohms
+- Feedback (values for R7 and R8) = 1000k ohms
 
 The diagram below is showing the location of the input resistance and the feedback. The 9V is the circuit is the battery that we used when we built the circuit on the breadboard. This can be seen on the diagram encircled in red. The 200k input resistance and the 1000k feedback would give us the 5 gain that we needed. 
 <p align="center">
