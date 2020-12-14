@@ -52,13 +52,13 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Circuit for PT100 Temperature Sensor
 
 <p align="center">
-    <img src="images/PT100_Full.jpg" width="60%">
+    <img src="images/fullPt100.jpg" width="60%">
 </p>
 
 ### Breadboard Close Up
 
 <p align="center">
-    <img src="images/PT100_breadb.jpg" width="60%">
+    <img src="images/PT100_bread.jpg" width="60%">
 </p>
 
 ### Breadboard connected to Arduino
@@ -80,7 +80,6 @@ With a temperature range of just -30°C to +50°C
 
 | T (°C) | T (K)  | Rth (Ω) | Vout (V) | Rescale | A/D (DU) |
 | :----: | :----: | :-----: | :------: | :-----: | :------: |
-|        |        |         |          |         |          |
 | -30.00 | 243.15 |  88.22  |   0.00   |  0.00   |   0.06   |
 | -22.00 | 251.15 |  91.37  |   0.02   |  0.53   |  107.86  |
 | -14.00 | 259.15 |  94.52  |   0.04   |  1.05   |  214.28  |
@@ -142,6 +141,21 @@ The potentiometer must be configured to 88.22.
 |    Gain     | R1  | R2  | Rg  |
 | :---------: | :-: | :-: | :-: |
 | 24.89554462 | 2k  | 10k | 1k  |
+
+```
+The instrumentation amplifier equation:
+A = (1 +(2R1/Rg)) / R2/R1
+
+```
+
+Pin diagram of LM324
+
+<p align="center">
+    <img src="images/lm324.jpg" width="60%">
+</p>
+
+Pin 4 is connected to the 5V of the arduino.
+Pin 11 is connected to ground.
 
 ### Arduino Code
 
