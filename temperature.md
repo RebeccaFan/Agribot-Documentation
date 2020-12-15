@@ -221,7 +221,7 @@ void loop()
    - Place your Arduino Nano onto the breadboard and connect the Vcc and Ground to the according rails on the breadboard.
    - Place the potentiometer and configure it to 88.22Ω.
    - Put the resistors into place, as seen from the breadboard images from above.
-   - Use the multimeter to check that the output is correct, replace the PT100 with a 119Ω resistor to check the output that should be 0.2V.
+   - Use the multimeter to check that the output is correct, replace the PT100 with a 119Ω resistor to check the output that should be 0.2V. Refer to the demo video.
 
    2. Differential Amplifier
 
@@ -230,3 +230,6 @@ void loop()
 3. Connect the arduino to a PC and open the Arduino app. Copy the Arduino code above and run the code. The serial monitor will show the output in degrees celsius and voltage in bits.
 
 ## Demo Video
+
+Youtube video to demo the wheatstone bridge.
+[<img src="images/pt100demo.PNG" width="60%">](https://www.youtube.com/watch?v=63DK1YMwPhE&feature=youtu.be)
