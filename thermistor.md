@@ -16,7 +16,7 @@
     2. [Procedure](#procedure)
 
 # Thermistor
-The type of the thermistor that we are going to be using the NTC thermistor USP10972. Thermistor is a temperature measurement system which is thermally sensitive resistor. Click here to see the datasheet.
+The type of the thermistor that we are going to be using the NTC thermistor USP10972. Thermistor is a temperature measurement system which is thermally sensitive resistor. Click [here](https://www.mouser.ie/datasheet/2/240/Littelfuse_Thermistor_Probes_Assemblies_Straight_U-1372486.pdf) to see the datasheet.
 
 ## Reasons to use Thermistor
 - Cheaper than PT100
@@ -69,7 +69,7 @@ To get these properties simultaneous equations is needed. To make it easier, we 
                                             0.5 = x(1/(1+(MiddleRth/y))-1/(1+z))
                                              1 = x(1/(1+(MaximumRth/y))-1/(1+z))
 ```
-4. Use wolframalpha website here and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
+4. Use wolframalpha website [here](https://www.wolframalpha.com/widgets/view.jsp?id=54af80f0c43c8717d710f39be0642aaa) and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
 6. These will then give you all the resistor values for the wheatstone bridge.
 
@@ -116,12 +116,14 @@ The diagram below is showing the location of the input resistance and the feedba
 ## Procedure
 1. Collect all the equipments listed above.
 2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e. red for Vcc, black for ground and yellow or other colour (except the 2  colours that already mentioned) for the other connections in the circuit. Be consistent of colour coding with the wires, this will make it easier to understand the circuit connections. Divide the circuit into 2 parts: 
-    1. **Wheatstone bridge** 
+
+**Wheatstone bridge** 
     - Place your Arduino Nano onto the breadboard and place the resistors in series to make up the wheatstone bridge, the values for the wheatstone bridge is shown in the "Wheatstone bridge properties" section of this page and it also shows how these values were calculated. See the diagram below to see how it has been laid out on the breadboard. Note that the green line represents the thermistor component and also that the wires are colour coded as already stated in step 2. The two long yellow wires will be the input to the amplifier.
 <p align="center">
     <img src="images/wheatstonepart.PNG" width="50%">
 </p>
-    2. **Differential Amplifier** 
+
+**Differential Amplifier** 
     - Next to build is the differential amplifier part. The pinouts of the amplifier click here to see. Connect pin 4 to 9V battery (red wiring) and pin 11 to ground (black wiring), for other connections of the amplifier see the diagram below.
 <p align="center">
     <img src="images/amplifierpart.PNG" width="50%">
