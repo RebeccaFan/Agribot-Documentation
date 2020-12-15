@@ -19,6 +19,7 @@
       1. [Pin diagram of LM324](#Pin-diagram-of-LM324)
    10. [Arduino Code](#Arduino-Code)
    11. [Procedure](#Procedure)
+   12. [Demonstration](#Demo-Video)
 
 ### Types of Temperature Sensors
 
@@ -152,7 +153,7 @@ Cross multiply:
 
 Use -b formula to solve for R:
 
-R = 514.28
+R = 514.28 ≈ 505.8 in the schematic
 ```
 
 The potentiometer must be configured to 88.22.
@@ -227,3 +228,5 @@ void loop()
    - Connect pin 4 to Vcc and pin 11 to ground. Check the pin diagram. Connect the resistors as seen in the image above. Then connect it to the wheatstone bridge indicted by the yellow jumper cables.
 
 3. Connect the arduino to a PC and open the Arduino app. Copy the Arduino code above and run the code. The serial monitor will show the output in degrees celsius and voltage in bits.
+
+## Demo Video
