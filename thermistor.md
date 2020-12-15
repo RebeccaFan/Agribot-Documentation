@@ -65,9 +65,9 @@ To get these properties simultaneous equations is needed. To make it easier, we 
 2. Note the Rth of the minimum, middle and maximum degrees. For example, refering to the excel sheet below -30 degC(min) is 191585ohms, 10 degC(middle) is 19968ohms and 50 degC (max) is 3643ohms. 
 3. Substitute this value in the equations below:
 ```
-                                             0 = x(1/(1+(MinimumRth/y))-1/(1+z))
-                                            0.5 = x(1/(1+(MiddleRth/y))-1/(1+z))
-                                             1 = x(1/(1+(MaximumRth/y))-1/(1+z))
+                                 0 = x(1/(1+(MinimumRth/y))-1/(1+z))
+                                 0.5 = x(1/(1+(MiddleRth/y))-1/(1+z))
+                                 1 = x(1/(1+(MaximumRth/y))-1/(1+z))
 ```
 4. Use wolframalpha website [here](https://www.wolframalpha.com/widgets/view.jsp?id=54af80f0c43c8717d710f39be0642aaa) and put in the 3 equations. It will then give you x,y,z values where x is Vs, y is R3 and z is R2/R4.
 5. Note that R4=R3 so to calculate R2 on its own multiply z value by R4.
@@ -79,20 +79,20 @@ The diagram below will help visualise the location of the resistors in the circu
 </p>
 
 ## Final Excel Sheet 
-| T (°C) | T (K)  | Rth (Ω) | Vout (V) | A/D (DU) | Rescaled  |
-| :----: | :----: | :-----: | :------: | :------: | :------:  |
-|        |        |         |          |          |           |
-| -30.00 | 243.15 | 191585  |   0.00   |   0.00   |  -26.92   |
-| -22.00 | 251.15 | 115062  |   0.06   |  12.55   |  902.51   |
-| -14.00 | 259.15 | 71313   |   0.14   |  29.59   |  2164.83  |
-| -6.00  | 267.15 | 45483   |   0.25   |  51.02   |  3751.98  |
-|  2.00  | 275.15 | 29778   |   0.37   |  75.83   |  5590.46  |
-| 10.00  | 283.15 | 19968   |   0.50   |  102.30  |  7550.91  |
-| 18.00  | 291.15 | 13687   |   0.63   |  128.39  |  9483.81  |
-| 26.00  | 299.15 | 9573    |   0.74   |  152.40  |  11262.09 |
-| 34.00  | 307.15 | 6822    |   0.85   |  173.26  |  12807.49 |
-| 42.00  | 315.15 | 4945    |   0.93   |  190.62  |  14092.92 |
-| 50.00  | 323.15 | 3643    |   1.00   |  204.60  |  15128.95 |
+| T (°C) | T (K)  | Rth (Ω) | Vout (V) | A/D (DU) | Rescaled |
+| :----: | :----: | :-----: | :------: | :------: | :------: |
+|        |        |         |          |          |          |
+| -30.00 | 243.15 | 191585  |   0.00   |   0.00   |  -26.92  |
+| -22.00 | 251.15 | 115062  |   0.06   |  12.55   |  902.51  |
+| -14.00 | 259.15 | 71313   |   0.14   |  29.59   |  2164.83 |
+| -6.00  | 267.15 | 45483   |   0.25   |  51.02   |  3751.98 |
+|  2.00  | 275.15 | 29778   |   0.37   |  75.83   |  5590.46 |
+| 10.00  | 283.15 | 19968   |   0.50   | 102.30   |  7550.91 |
+| 18.00  | 291.15 | 13687   |   0.63   | 128.39   |  9483.81 |
+| 26.00  | 299.15 |  9573   |   0.74   | 152.40   | 11262.09 |
+| 34.00  | 307.15 |  6822   |   0.85   | 173.26   | 12807.49 |
+| 42.00  | 315.15 |  4945   |   0.93   | 190.62   | 14092.92 |
+| 50.00  | 323.15 |  3643   |   1.00   | 204.60   | 15128.95 |
 
 ### Calculating the gain
 Gain of 5 is needed so:
@@ -128,4 +128,5 @@ The diagram below is showing the location of the input resistance and the feedba
 <p align="center">
     <img src="images/amplifierpart.PNG" width="50%">
 </p>
-    - When the 2 parts of the circuit is done refer to the section called "Circuit Layout on Breadboard" to make sure that you connected both of the parts together correctly.
+
+When the 2 parts of the circuit is done refer to the section called "Circuit Layout on Breadboard" to make sure that you connected both of the parts together correctly.
