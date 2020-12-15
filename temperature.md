@@ -1,13 +1,33 @@
-# Temperature Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F15%2F15766.png&f=1&nofb=1" width="20px">](./index.md)
+# Temperature Sensor
 
-## Types of Temperature Sensors
+# Table of contents
+
+1. [Types of Temperature Sensors](#Types-of-Temperature-Sensors)
+   1. [Reasons why PT100 is used](#Reasons-why-PT100-is-used)
+   2. [Block Diagram for PT100 ciruit](#Block-Diagram-for-PT100-ciruit)
+   3. [Schematic of PT100 ciruit](#Schematic-Of-PT100-ciruit)
+   4. [Equipment for the circuit](#Equipment-for-the-circuit)
+   5. [Required Temperature Range](#Required-Temperature-Range)
+      1. [Circuit for PT100 Temperature Sensor](#Circuit-for-PT100-Temperature-Sensor)
+      2. [Breadboard Close Up](#Breadboard-Close-Up)
+      3. [Breadboard connected to Arduino](#Breadboard-connected-to-Arduino)
+   6. [Temperature Range](#temperature-range)
+   7. [Table of Unit Conversion Through System ](#Table-of-Unit-Conversion-Through-System)
+   8. [Wheatstone Bridge Configuration](#Wheatstone-Bridge-Configuration)
+      1. [Calculation for Wheatstone Bridge](#Calculation-for-Wheatstone-Bridge)
+   9. [Amplifier Properties](#Amplifier-Properties)
+      1. [Pin diagram of LM324](#Pin-diagram-of-LM324)
+   10. [Arduino Code](#Arduino-Code)
+   11. [Procedure](#Procedure)
+
+### Types of Temperature Sensors
 
 Before deciding to base the the temperature measurement system around the PT100, the various available options were considered. A LM35, thermocouple, US Sensors thermistor and PT100 were all considered. The table below compares the different properties of each of the sensors:
 
-|               **LM35**                |           **Thermocouple**            |          **Thermistor **          |               **PT100**               |
+|               **LM35**                |           **Thermocouple**            |          **Thermistor **          |               **PT100**               |
 | :-----------------------------------: | :-----------------------------------: | :-------------------------------: | :-----------------------------------: |
 |                                       |                                       |
-|     Small Range: -55°C to +150°C      |    Large Range: -270°C to +1400°C     |   Small Range: -30°C to +130°C    |    Medium Range: -200°C to +850°C     |
+|     Small Range: -55°C to +150°C      |    Large Range: -270°C to +1400°C     |   Small Range: -30°C to +130°C    |    Medium Range: -200°C to +850°C     |
 | Output Unit: Millivolts (mV) [linear] | Output Unit: Millivolts (mV) [linear] | Output Unit: Ohms(Ω) [non-linear] |     Output Unit: Ohms(Ω) [linear]     |
 |            Poor Stability             |            Poor Stability             |          Poor Stability           |           Decent Stability            |
 |  Very low sensitivity, low accuracy   |  Very low sensitivity, low accuracy   | High sensitivity, decent accuracy | Very high sensitivity , good accuracy |
@@ -17,7 +37,7 @@ Before deciding to base the the temperature measurement system around the PT100,
 
 - It is one of the most accurate sensors because of its platinum material
 - It covers a good range of temperature
-- Good long-term stability and response time
+- Good long-term stability and response time
 - The relationship between resistance and temperature is relatively linear
 - Relatively immune to electrical noise
 - Often used in industrial operations for atmospheric conditions
@@ -52,19 +72,19 @@ Before deciding to base the the temperature measurement system around the PT100,
 ### Circuit for PT100 Temperature Sensor
 
 <p align="center">
-    <img src="images/fullPt100.jpg" width="60%">
+    <img src="images/PT-Full.jpg" width="60%">
 </p>
 
 ### Breadboard Close Up
 
 <p align="center">
-    <img src="images/PT100_bread.jpg" width="60%">
+    <img src="images/PT-breadb.jpg" width="60%">
 </p>
 
 ### Breadboard connected to Arduino
 
 <p align="center">
-    <img src="images/arduino.jpg" width="60%">
+    <img src="images/arduino-img.jpg" width="60%">
 </p>
 
 ### Required Temperature Range
@@ -98,8 +118,9 @@ With a temperature range of just -30°C to +50°C
 | :--: | :---: | :---: | :---: |
 | 4.71 | 505.8 | 505.8 | 88.22 |
 
+#### Calculation for Wheatstone Bridge
+
 ```
-Equations:
 Bridge equation:
 Vout = Vs(Rth/Rth+R2 - R3/R3+R1)
 
@@ -142,13 +163,7 @@ The potentiometer must be configured to 88.22.
 | :---------: | :-: | :-: | :-: |
 | 24.89554462 | 2k  | 10k | 1k  |
 
-```
-The instrumentation amplifier equation:
-A = (1 +(2R1/Rg)) / R2/R1
-
-```
-
-Pin diagram of LM324
+#### Pin diagram of LM324
 
 <p align="center">
     <img src="images/lm324.jpg" width="60%">
@@ -194,3 +209,19 @@ void loop()
 }
 
 ```
+
+## Procedure
+
+1. Prepare the equipments listed above.
+2. The circuit can be divided into into 2 parts:
+
+   1. Wheatstone bridge
+
+   - Place your Arduino Nano onto the breadboard and connect the Vcc and Ground to the according rails on the breadboard.
+   - Place the potentiometer and configure it to 88.22Ω.
+   - Put the resistors into place, as seen from the breadboard images from above.
+   - Use the multimeter to check that the output is correct, replace the PT100 with a 119Ω resistor to check the output that should be 0.2V.
+
+   2. Differential Amplifier
+
+   - Connect pin 4 to Vcc and pin 11 to ground. Check the pin diagram. Connect the resistors as seen in the image above. Then connect it to the wheatstone bridge indicted by the yellow jumper cables.
