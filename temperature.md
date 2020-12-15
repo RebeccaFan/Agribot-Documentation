@@ -225,3 +225,5 @@ void loop()
    2. Differential Amplifier
 
    - Connect pin 4 to Vcc and pin 11 to ground. Check the pin diagram. Connect the resistors as seen in the image above. Then connect it to the wheatstone bridge indicted by the yellow jumper cables.
+
+3. Connect the arduino to a PC and open the Arduino app. Copy the Arduino code above and run the code. The serial monitor will show the output in degrees celsius and voltage in bits.
