@@ -5,7 +5,8 @@
     1. [Reasons to use Thermistor](#reasons-to-use-thermistor)
     2. [Block Diagram](#block-diagram)
     3. [Schematic of Thermistor](#schematic-of-thermistor)
-    4. [Configurations for Excel](#configurations-for-excel)
+    4. [Circuit Layout on Breadboard](#circuit-layout-on-breadboard)
+    5. [Configurations for Excel](#configurations-for-excel)
         1. [Temperature Range](#temperature-range)
         2. [Voltage Divider Properties ](#voltage-divider-properties)
         3. [Wheatstone Bridge Properties](#wheatstone-bridge-properties)
@@ -30,6 +31,12 @@ The type of the thermistor that we are going to be using the NTC thermistor USP1
 ## Schematic of Thermistor
 <p align="center">
     <img src="images/schem.PNG" width="80%">
+</p>
+
+## Circuit Layout on Breadboard
+This section is showing how the thermistor could be laid out on a breadboard with all the values that were calculated and show in the "Wheatstone Bridge Properties" section of this page.
+<p align="center">
+    <img src="images/thermistorlayout.PNG" width="70%">
 </p>
 
 ## Configurations for Excel
@@ -109,10 +116,14 @@ The diagram below is showing the location of the input resistance and the feedba
 ## Procedure
 1. Collect all the equipments listed above.
 2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e. red for Vcc, black for ground and yellow or other colour (except the 2  colours that already mentioned) for the other connections in the circuit. Be consistent of colour coding with the wires, this will make it easier to understand the circuit connections. Divide the circuit into 2 parts: 
-    1. Wheatstone bridge 
-    - Place your Arduino Nano onto the breadboard and place the resistors in series to make up the wheatstone bridge. See the diagram below
-
-    2. Differential Amplifier
-    - Next to build is the differential amplifier part. The pinouts of the amplifier click here to see. Connect pin 4 to Vcc (red wiring) and pin 11 to ground (black wiring), for other connections of the amplifier see the diagram below.
-
-    - When the 2 parts of the circuit is done refer to the schematic of the circuit to make sure that you connected both of the parts together correctly.
+    1. **Wheatstone bridge** 
+    - Place your Arduino Nano onto the breadboard and place the resistors in series to make up the wheatstone bridge, the values for the wheatstone bridge is shown in the "Wheatstone bridge properties" section of this page and it also shows how these values were calculated. See the diagram below to see how it has been laid out on the breadboard. Note that the green line represents the thermistor component and also that the wires are colour coded as already stated in step 2. The two long yellow wires will be the input to the amplifier.
+<p align="center">
+    <img src="images/wheatstonepart.PNG" width="50%">
+</p>
+    2. **Differential Amplifier** 
+    - Next to build is the differential amplifier part. The pinouts of the amplifier click here to see. Connect pin 4 to 9V battery (red wiring) and pin 11 to ground (black wiring), for other connections of the amplifier see the diagram below.
+<p align="center">
+    <img src="images/amplifierpart.PNG" width="50%">
+</p>
+    - When the 2 parts of the circuit is done refer to the section called "Circuit Layout on Breadboard" to make sure that you connected both of the parts together correctly.
