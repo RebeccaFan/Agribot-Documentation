@@ -40,7 +40,7 @@ This section is showing how the thermistor could be laid out on a breadboard wit
 </p>
 
 ## Configurations for Excel
-Different Properties that was used in excel will be shown here. The excel sheet will also be available to download just click here.
+Different Properties that was used in excel will be shown here. The excel sheet will also be available to download just click [here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/Thermistor_Excel.zip).
 
 ### Temperature Range
 | **Tmin** | **Tmax** |
