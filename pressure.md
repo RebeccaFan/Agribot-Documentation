@@ -88,7 +88,9 @@ Above the pressure was 14.23psi in the Pressure Range psi column of the table. C
     <img src="images/Pressure.PNG">
 </p>
 
-As you can see the circuit is very similar to the temperature sensor circuit. Refer back to the PT100 circuit: [PT100](./temperature.md)
+As you can see the circuit is very similar to the temperature sensor circuit.
+Refer back to the PT100 circuit:[PT100](./temperature.md)
+
 The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.
 
 ## Loading of the sensor
