@@ -5,7 +5,7 @@
 1. [Types of Temperature Sensors](#types-of-temperature-sensors)
 2. [Reasons why PT100 is used](#reasons-why-pt100-is-used)
 3. [Block Diagram for PT100 ciruit](#block-diagram-for-pt100-circuit)
-4. [Schematic of PT100 ciruit](#schematic-of-pt100-ciruit)
+4. [Schematic of PT100 ciruit](#schematic-of-pt100-circuit)
 5. [Equipment for the circuit](#equipment-for-the-circuit)
 6. [Required Temperature Range](#required-temperature-range)
    1. [Circuit for PT100 Temperature Sensor](#circuit-for-pt100-temperature-sensor)
@@ -16,10 +16,10 @@
 10. [Wheatstone Bridge Configuration](#wheatstone-bridge-configuration)
     1. [Calculation for Wheatstone Bridge](#calculation-for-wheatstone-bridge)
 11. [Amplifier Properties](#amplifier-properties)
-    1. [Pin diagram of LM324](#pin-diagram-of-LM324)
+    1. [Pin diagram of LM324](#pin-diagram-of-lm324)
 12. [Arduino Code](#arduino-code)
 13. [Procedure](#procedure)
-14. [Demo Video](#demo-Video)
+14. [Demo Video](#demo-video)
 
 ### Types of Temperature Sensors
 
