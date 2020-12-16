@@ -2,39 +2,29 @@
 
 # Table of contents
 
-1. [Types of Temperature Sensors](#Types-of-Temperature-Sensors)
-   1. [Reasons why PT100 is used](#Reasons-why-PT100-is-used)
-   2. [Block Diagram for PT100 ciruit](#Block-Diagram-for-PT100-ciruit)
-   3. [Schematic of PT100 ciruit](#Schematic-Of-PT100-ciruit)
-   4. [Equipment for the circuit](#Equipment-for-the-circuit)
-   5. [Required Temperature Range](#Required-Temperature-Range)
-      1. [Circuit for PT100 Temperature Sensor](#Circuit-for-PT100-Temperature-Sensor)
-      2. [Breadboard Close Up](#Breadboard-Close-Up)
-      3. [Breadboard connected to Arduino](#Breadboard-connected-to-Arduino)
+1. [Types of Temperature Sensors](#types-of-temperature-Ssnsors)
+   1. [Reasons why PT100 is used](#reasons-why-PT100-is-used)
+   2. [Block Diagram for PT100 ciruit](#block-diagram-for-PT100-ciruit)
+   3. [Schematic of PT100 ciruit](#schematic-Of-PT100-ciruit)
+   4. [Equipment for the circuit](#equipment-for-the-circuit)
+   5. [Required Temperature Range](#required-temperature-range)
+      1. [Circuit for PT100 Temperature Sensor](#circuit-for-PT100-temperature-sensor)
+      2. [Breadboard Close Up](#breadboard-close-up)
+      3. [Breadboard connected to Arduino](#breadboard-connected-to-arduino)
    6. [Temperature Range](#temperature-range)
-   7. [Table of Unit Conversion Through System ](#Table-of-Unit-Conversion-Through-System)
-   8. [Wheatstone Bridge Configuration](#Wheatstone-Bridge-Configuration)
-      1. [Calculation for Wheatstone Bridge](#Calculation-for-Wheatstone-Bridge)
-   9. [Amplifier Properties](#Amplifier-Properties)
-      1. [Pin diagram of LM324](#Pin-diagram-of-LM324)
-   10. [Arduino Code](#Arduino-Code)
-   11. [Procedure](#Procedure)
-   12. [Demonstration](#Demo-Video)
+   7. [Table of Unit Conversion Through System ](#table-of-unit-conversion-through-system)
+   8. [Wheatstone Bridge Configuration](#wheatstone-bridge-configuration)
+      1. [Calculation for Wheatstone Bridge](#calculation-for-wheatstone-bridge)
+   9. [Amplifier Properties](#amplifier-properties)
+      1. [Pin diagram of LM324](#pin-diagram-of-LM324)
+   10. [Arduino Code](#arduino-Code)
+   11. [Procedure](#procedure)
+   12. [Demonstration](#demo-Video)
 
 ### Types of Temperature Sensors
 
 Before deciding to base the the temperature measurement system around the PT100, the various available options were considered. A LM35, thermocouple, US Sensors thermistor and PT100 were all considered. The table below compares the different properties of each of the sensors:
 
-<<<<<<< HEAD
-|                **LM35**                 |           **Thermocouple**            |          **Thermistor**           |               **PT100**               |
-| :-------------------------------------: | :-----------------------------------: | :-------------------------------: | :-----------------------------------: |
-|                                         |                                       |
-|      Small Range: -55°C to +150°C       |    Large Range: -270°C to +1400°C     |   Small Range: -30°C to +130°C    |    Medium Range: -200°C to +850°C     |
-|  Output Unit: Millivolts (mV) [linear]  | Output Unit: Millivolts (mV) [linear] | Output Unit: Ohms(Ω) [non-linear] |     Output Unit: Ohms(Ω) [linear]     |
-|             Poor Stability              |            Poor Stability             |          Poor Stability           |           Decent Stability            |
-|   Very low sensitivity, low accuracy    |  Very low sensitivity, low accuracy   | High sensitivity, decent accuracy | Very high sensitivity , good accuracy |
-| <img src="images/lm35.png" width="70%"> |  <img src="images/Thermocouple.jpg">  | <img src="images/Thermistor.png"> |     <img src="images/PT100.png">      |
-=======
 |               **LM35**                |           **Thermocouple**            |          **Thermistor **          |               **PT100**               |
 | :-----------------------------------: | :-----------------------------------: | :-------------------------------: | :-----------------------------------: |
 |                                       |                                       |
@@ -43,7 +33,6 @@ Before deciding to base the the temperature measurement system around the PT100,
 |            Poor Stability             |            Poor Stability             |          Poor Stability           |           Decent Stability            |
 |  Very low sensitivity, low accuracy   |  Very low sensitivity, low accuracy   | High sensitivity, decent accuracy | Very high sensitivity , good accuracy |
 |      <img src="images/lm35.png">      |  <img src="images/Thermocouple.jpg">  | <img src="images/Thermistor.png"> |     <img src="images/PT100.png">      |
->>>>>>> Rebecca
 
 ### Reasons why PT100 is used
 
