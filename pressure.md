@@ -1,7 +1,25 @@
 # Pressure Sensor [<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F15%2F15766.png&f=1&nofb=1" width="20px">](./index.md)
 
+# Table of contents
+
+1. [Introduction](#introduction)
+2. [Image of Honeywell 24PC Sensor](#image-of-honeywell-24pc-sensor)
+3. [Piezoresistive pressure sensors](#piezoresistive-pressure-sensors)
+4. [Gauge and Absolute Pressure](#gauge-and-absolute-pressure)
+   1. [Gauge Pressure](#gauge-pressure)
+   2. [Absolute Pressure](#absolute-pressure)
+5. [Units of Pressure](#units-of-pressure)
+6. [24PC Sensor Data Sheet](#24pc-sensor-data-sheet)
+7. [Build Circuit with 24PC Sensor](#build-circuit-with-24pc-sensor)
+8. [Loading of the sensor](#loading-of-the-sensor)
+9. [Wheatstone Bridge Configuration](#wheatstone-bridge-configuration)
+
+# Introduction
+
 The Honeywell 24PC Series miniature pressure sensors provide reliable gage.
 Hydrostatic pressure is the pressure that is exerted by a fluid at equilibrium at a given point within the fluid, due to the force of gravity. Hydrostatic pressure increases in proportion to depth measured from the surface because of the increasing weight of fluid exerting downward force from above.
+
+## Image of Honeywell 24PC Sensor
 
 <p align="center">
     <img src="images/24PC.jpg" width="30%">
@@ -49,13 +67,29 @@ Using the sensor sheet it will provide as a guide to choose the which 24PC serie
 
 Link to Datasheet: [24PC Datasheet](./24PC.md)
 
+```
+Eg. If height of tank is 10m. Find the pressure by
+     P = pgh,    where p = 1000 kg/m^2   g = 9.81m/s^2   h = height in meters
+
+P = 1000 * 9.81 * 10 = 98100Pa
+1 psi = 6895Pa
+To convert pascal's to psi
+98100 / 6895 = 14.23psi
+
+From the datasheet, use the 24PC order guide to choose the most suitable sensor.
+
+Above the pressure was 14.23psi in the Pressure Range psi column of the table. Choose the 24PCB Type as it will have a suitable range to accommodate with the pressure calculated for the above height of tank.
+
+```
+
 ## Build Circuit with 24PC Sensor
 
 <p align="center">
     <img src="images/Pressure.PNG">
 </p>
 
-As you can see the circuit is very similar to the temperature sensor circuit. The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.
+As you can see the circuit is very similar to the temperature sensor circuit. Refer back to the PT100 circuit: [PT100](./temperature.md)
+The piezoresistors are deposited on a flexible membrane in a Wheatstone bridge arrangement. The resistance values will be large so these sensors have a high output impedance, therefore the amplifier must have very high input impedance.
 
 ## Loading of the sensor
 
