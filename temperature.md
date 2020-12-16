@@ -2,24 +2,24 @@
 
 # Table of contents
 
-1. [Types of Temperature Sensors](#Types-of-Temperature-Sensors)
-   1. [Reasons why PT100 is used](#Reasons-why-PT100-is-used)
-   2. [Block Diagram for PT100 ciruit](#Block-Diagram-for-PT100-ciruit)
-   3. [Schematic of PT100 ciruit](#Schematic-Of-PT100-ciruit)
-   4. [Equipment for the circuit](#Equipment-for-the-circuit)
-   5. [Required Temperature Range](#Required-Temperature-Range)
-      1. [Circuit for PT100 Temperature Sensor](#Circuit-for-PT100-Temperature-Sensor)
-      2. [Breadboard Close Up](#Breadboard-Close-Up)
-      3. [Breadboard connected to Arduino](#Breadboard-connected-to-Arduino)
-   6. [Temperature Range](#temperature-range)
-   7. [Table of Unit Conversion Through System ](#Table-of-Unit-Conversion-Through-System)
-   8. [Wheatstone Bridge Configuration](#Wheatstone-Bridge-Configuration)
-      1. [Calculation for Wheatstone Bridge](#Calculation-for-Wheatstone-Bridge)
-   9. [Amplifier Properties](#Amplifier-Properties)
-      1. [Pin diagram of LM324](#Pin-diagram-of-LM324)
-   10. [Arduino Code](#Arduino-Code)
-   11. [Procedure](#Procedure)
-   12. [Demonstration](#Demo-Video)
+1. [Types of Temperature Sensors](#types-of-temperature-sensors)
+2. [Reasons why PT100 is used](#reasons-why-pt100-is-used)
+3. [Block Diagram for PT100 ciruit](#block-diagram-for-pt100-circuit)
+4. [Schematic of PT100 ciruit](#schematic-of-pt100-circuit)
+5. [Equipment for the circuit](#equipment-for-the-circuit)
+6. [Required Temperature Range](#required-temperature-range)
+   1. [Circuit for PT100 Temperature Sensor](#circuit-for-pt100-temperature-sensor)
+   2. [Breadboard Close Up](#breadboard-close-up)
+7. [Breadboard connected to Arduino](#breadboard-connected-to-arduino)
+8. [Temperature Range](#required-temperature-range)
+9. [Table of Unit Conversion Through System](#table-of-unit-conversion-through-system)
+10. [Wheatstone Bridge Configuration](#wheatstone-bridge-configuration)
+    1. [Calculation for Wheatstone Bridge](#calculation-for-wheatstone-bridge)
+11. [Amplifier Properties](#amplifier-properties)
+    1. [Pin diagram of LM324](#pin-diagram-of-lm324)
+12. [Arduino Code](#arduino-code)
+13. [Procedure](#procedure)
+14. [Demo Video](#demo-video)
 
 ### Types of Temperature Sensors
 
@@ -48,6 +48,13 @@ Before deciding to base the the temperature measurement system around the PT100,
 <p align="center">
     <img src="images/BlockDiagram.PNG">
 </p>
+
+- The block diagram for this circuit, the temp range is -30 to 50, using the PT100 tables it equals to 88.22 to 119.40 ohms. K1 is the sensitivity of the Pt100. For a PT100 sensor, a 1 °C temperature change will cause a 0.384 ohm change in resistance.
+- The values from the PT100 will go to a Wheatstone bridge which will calculate them to 0 to 200mV. K2 is the change in mV from the Wheatstone bridge output per ohm in the PT100.
+- From there it needs to be amplified to achieve the output of the Arduino. K3 is the gain of 25 is needed.
+- It goes into the A/D converter to convert V to Digital Units. For a 10 bit converter it will have values from 0 to 1023. K4 is the sensitivity of the Arduino which is a constant of 204.6 digital units per volt.
+- This will need to rescaled to get back to degrees Celsius units,  
+  K5 is the change per digital unit will be a change in 0.78 degrees Celsius.
 
 ## Schematic of PT100 circuit
 
@@ -94,8 +101,6 @@ Before deciding to base the the temperature measurement system around the PT100,
 | :------: | :------: |
 |  -30 °C  |  50 °C   |
 | 243.15 K | 323.15 K |
-
-With a temperature range of just -30°C to +50°C
 
 ### Table of Unit Conversion Through System
 
@@ -175,9 +180,12 @@ Pin 11 is connected to ground.
 
 ### Arduino Code
 
+Download the code in the following:
+[here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/PT100_ReScaling_Code.zip)
+
 ```
 int vinPin = A0;
-int vin;
+int vinBits;
 float outDegC;
 
 void setup()
@@ -189,15 +197,15 @@ void loop()
     delay(500);
     //delay for half a second
 
-    vin = analogRead(vinPin);
+    vinBits = analogRead(vinPin);
     //read in value from Arduino
 
-    outDegC = (vin * .0785) - 30;
+    outDegC = (vinBits * .0785) - 30;
     //rescale back to degrees celsius
     // (50 - (-30)) / 1019 bits = 0.785
 
     Serial.print("Voltage In Bits: ");
-    Serial.print(vin);
+    Serial.print(vinBits);
     Serial.print("\t\t\t");
     // print out in voltage in bits on screen
 

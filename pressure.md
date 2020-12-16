@@ -34,14 +34,14 @@ If you want to measure pressures that are not influenced by changes in atmospher
 
 ## Units of Pressure
 
-SI unit for pressure is the Pascal, Pa.
-Pa = N/m2 (Newton per square meter)
-1 bar = 100,000 Pa = 105 Pa
-1 atm = 101,325 Pa
-1 psi = 6895 Pa
-1 torr = 1 mmHg = 133.3 Pa
-1 inch of water = 249 Pa (P=ρgh = 1000 x 9.81 x 0.0254)
-P = pgh, P = Pressure, p =density of the liquid, g = acceleration due to gravity, h = height of liquid
+- SI unit for pressure is the Pascal, Pa.
+- Pa = N/m2 (Newton per square meter)
+- 1 bar = 100,000 Pa = 105 Pa
+- 1 atm = 101,325 Pa
+- 1 psi = 6895 Pa
+- 1 torr = 1 mmHg = 133.3 Pa
+- 1 inch of water = 249 Pa (P=ρgh = 1000 x 9.81 x 0.0254)
+- P = pgh, P = Pressure, p =density of the liquid, g = acceleration due to gravity, h = height of liquid
 
 ## 24PC Sensor Data Sheet
 
