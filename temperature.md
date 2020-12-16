@@ -216,14 +216,14 @@ void loop()
 1. Prepare the equipments listed above.
 2. The circuit can be divided into into 2 parts:
 
-   1. Wheatstone bridge
+   **Wheatstone bridge**
 
    - Place your Arduino Nano onto the breadboard and connect the Vcc and Ground to the according rails on the breadboard.
    - Place the potentiometer and configure it to 88.22Ω.
    - Put the resistors into place, as seen from the breadboard images from above.
    - Use the multimeter to check that the output is correct, replace the PT100 with a 119Ω resistor to check the output that should be 0.2V. Refer to the demo video.
 
-   2. Differential Amplifier
+   **Differential Amplifier**
 
    - Connect pin 4 to Vcc and pin 11 to ground. Check the pin diagram. Connect the resistors as seen in the image above. Then connect it to the wheatstone bridge indicted by the yellow jumper cables.
 
