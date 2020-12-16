@@ -12,7 +12,6 @@
 6. [24PC Sensor Data Sheet](#24pc-sensor-data-sheet)
 7. [Build Circuit with 24PC Sensor](#build-circuit-with-24pc-sensor)
 8. [Loading of the sensor](#loading-of-the-sensor)
-9. [Wheatstone Bridge Configuration](#wheatstone-bridge-configuration)
 
 # Introduction
 
