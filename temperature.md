@@ -232,4 +232,5 @@ void loop()
 ## Demo Video
 
 Youtube video to demo the wheatstone bridge.
+
 [<img src="images/pt100demo.jpg" width="60%">](https://www.youtube.com/watch?v=63DK1YMwPhE&feature=youtu.be)
