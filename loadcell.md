@@ -51,7 +51,7 @@ To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a hi
 ## Block Diagram
 
 <p align="center">
-    <img src="images/block-load.png" width="100%">
+    <img src="images/block-load.png" width="110%">
 </p>
 
 ### Arduino Code
