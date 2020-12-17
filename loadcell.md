@@ -36,7 +36,7 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 ## Calculating the gain
 
-To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assunming Rf = Rg and Rin = R1 = R2. 
+To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assunming Rf = Rg and Rin = R1 = R2.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Op-Amp_Differential_Amplifier.svg/280px-Op-Amp_Differential_Amplifier.svg.png" width="40%">
@@ -107,7 +107,7 @@ These last lines are used to print out the recorded data to the serial monitor. 
 
 ## Excel Spreadsheet
 
-| **Mass (g)** | **Voltage (mV)** | **Vout (mV), Gain 10** | **Vout (V), Gain 200** | **A/D (DU)** |
+| **Mass (g)** | **Voltage (mV)** | **Vout (mV), Gain 10** | **Vout (V), Gain 201** | **A/D (DU)** |
 | :----------: | :--------------: | :--------------------: | :--------------------: | :----------: |
 |      0       |       0.2        |          11.1          |         1.5 \*         |    306.9     |
 |     196      |       0.6        |          11.2          |          1.5           |    306.9     |
