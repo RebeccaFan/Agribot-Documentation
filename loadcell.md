@@ -4,8 +4,6 @@
 
 1. [Introduction](#introduction)
    1. [How it works](#how-it-works)
-   2. [When to use a load cell](#when-to-use-a-load-cell)
-   3. [Strain-gauge load cell](#strain-gauge-load-cell)
 2. [Circuit layout on breadboard](#circuit-layout-on-breadboard)
 3. [Block Diagram](#block-diagram)
 4. [Arduino Code](#arduino-code)
