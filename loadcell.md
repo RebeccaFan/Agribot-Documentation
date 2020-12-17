@@ -38,7 +38,7 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 ## Circuit layout on breadboard
 
 <p align="center">
-    <img src="images/load-cell-circuit.png" width="50%">
+    <img src="images/load-cell-circuit.png" width="80%">
 </p>
 
 ## Block Diagram
@@ -135,12 +135,12 @@ To set up for the demonstration the required equipment is listed below:
 
 4. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 is needed to be connected to ground. The resistors that we used were two 1M ohms and two 100k ohms.
 <p align="center">
-    <img src="images/load-cell-S4.png" width="50%">
+    <img src="images/load-cell-S4.png" width="80%">
 </p>
 
 5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100kohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
-    <img src="images/load-cell-S5.png" width="50%">
+    <img src="images/load-cell-S5.png" width="80%">
 </p>
 
 6. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
