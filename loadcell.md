@@ -107,7 +107,7 @@ To set up for the demonstration the required equipment is listed below:
 - Different colour wires
   - red for Vcc
   - black for ground
-  - green for connecting sensor to Arduino
+  - green for connecting the sensor to Arduino
 - Breadboard
 - LM324 Operational Amplifier
 - Computer (download Arduino IDE)
@@ -135,7 +135,7 @@ To set up for the demonstration the required equipment is listed below:
 </p>
 
 6. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
-7. Once the code has been verified and uploaded the initial installations is now done and refer to the following steps below to test the sensor
+7. Once the code has been verified and uploaded the initial installations is now done and refer to the following steps below to test the sensor.
 
 ### Testing
 
