@@ -5,15 +5,16 @@
 1. [Introduction](#introduction)
    1. [How it works](#how-it-works)
 2. [Circuit layout on breadboard](#circuit-layout-on-breadboard)
-3. [Block Diagram](#block-diagram)
-4. [Arduino Code](#arduino-code)
-5. [Excel Spreadsheet ](#excel-spreadsheet)
+3. [Calculating the gain](#calculating-the-gain)
+4. [Block Diagram](#block-diagram)
+5. [Arduino Code](#arduino-code)
+6. [Excel Spreadsheet ](#excel-spreadsheet)
    1. [Excel Graphs ](#excel-graphs)
-6. [Setup for the demonstration](#setup-for-the-demonstration)
+7. [Setup for the demonstration](#setup-for-the-demonstration)
    1. [Equipment for the demonstration](#equipment-for-the-demonstration)
    2. [Initial installation of the circuit and code](#initial-installation-of-the-circuit-and-code)
    3. [Testing](#testing)
-7. [Load Cell demonstration](#load-cell-demonstration)
+8. [Load Cell demonstration](#load-cell-demonstration)
 
 # Introduction
 
@@ -31,6 +32,20 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 <p align="center">
     <img src="images/load-cell-circuit.png" width="80%">
+</p>
+
+## Calculating the gain
+
+To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assunming Rf = Rg and Rin = R1 = R2. 
+
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Op-Amp_Differential_Amplifier.svg/280px-Op-Amp_Differential_Amplifier.svg.png" width="40%">
+</p>
+
+To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a high enough input impedance to the circuit to avoid any significant amount of loading. This is then passed into the non inverting amp which we use the equation (Rf + Rg)/Rg which to get a gain of 200 we can use 200k and a 1k ohm resistor to give a gain of 201.
+
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Operational_amplifier_noninverting.svg/220px-Operational_amplifier_noninverting.svg.png" width="30%">
 </p>
 
 ## Block Diagram
