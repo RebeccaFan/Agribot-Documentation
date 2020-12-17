@@ -51,7 +51,7 @@ To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a hi
 ## Block Diagram
 
 <p align="center">
-    <img src="images/block-load.png" width="80%">
+    <img src="images/block-load.png" width="100%">
 </p>
 
 ### Arduino Code
@@ -169,9 +169,6 @@ To set up for the demonstration the required equipment is listed below:
 <p align="center">
     <img src="images/load-cell-S5.png" width="80%">
 </p>
-
-3. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
-4. Once the code has been verified and uploaded the initial installation is now done and refer to the following steps below to test the sensor.
 
 ### Testing
 
