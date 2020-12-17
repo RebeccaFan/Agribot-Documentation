@@ -44,7 +44,7 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 ### Arduino Code
 
 Download the code in the following:
-[here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/PT100_ReScaling_Code.zip)
+[here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/Load_code.zip)
 
 ```
 int dataInPin = A0;
@@ -149,7 +149,7 @@ To set up for the demonstration the required equipment is listed below:
 ### Initial installation of the circuit and code
 
 1. Collect all the equipment listed above.
-2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e., red for Vcc, black for ground and y or other colour (except the 2 colours that already mentioned) for the wiring of the ultrasonic sensor to the Arduino Nano digital pins.
+2. For clarity of the circuit, make sure that you use different colours for the wires i.e. red for Vcc, black for ground.
 3. Place your Arduino Nano onto the breadboard as well as the 4 wires of the load cell.
 
 - Red wire goes to 5V and black wire goes to the ground
@@ -157,12 +157,12 @@ To set up for the demonstration the required equipment is listed below:
 - White wire is connected to another 100k ohms and into pin 2 (+ve) of amplifier
 - Red wire of the load cell is connected to the 5V from the Arduino Nano
 
-4. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 is needed to be connected to ground. The resistors that we used were two 1M ohms and two 100k ohms.
+4. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 needs to be connected to ground. The resistors that we used were two 1M ohms (brown, black, green) and two 100k ohms (brown, black, yellow).
 <p align="center">
     <img src="images/load-cell-S4.png" width="80%">
 </p>
 
-5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100k ohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
+5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100kohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
     <img src="images/load-cell-S5.png" width="80%">
 </p>
@@ -179,4 +179,4 @@ To set up for the demonstration the required equipment is listed below:
 
 ## Load Cell demonstration
 
-[<img src="images/pt100demo.jpg" width="60%">](https://www.youtube.com/watch?v=63DK1YMwPhE&feature=youtu.be)
+[<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
