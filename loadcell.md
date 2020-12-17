@@ -12,7 +12,7 @@
    1. [Excel Graphs ](#excel-graphs)
 7. [Setup for the demonstration](#setup-for-the-demonstration)
    1. [Equipment for the demonstration](#equipment-for-the-demonstration)
-   2. [Initial installation of the circuit and code](#initial-installation-of-the-circuit-and-code)
+   2. [Initial installation of the circuit and code](#installation-of-the-circuit-and-code)
    3. [Testing](#testing)
 8. [Load Cell demonstration](#load-cell-demonstration)
 
@@ -36,13 +36,13 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 ## Calculating the gain
 
-To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assuming Rf = Rg and Rin = R1 = R2.
+To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 1500 to reach just less than  5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 147. The equation for the gain of a differential amplifier is Rf/Rin assuming Rf = Rg and Rin = R1 = R2.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Op-Amp_Differential_Amplifier.svg/280px-Op-Amp_Differential_Amplifier.svg.png" width="40%">
 </p>
 
-To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a high enough input impedance to the circuit to avoid any significant amount of loading. This is then passed into the non inverting amp which we use the equation (Rf + Rg)/Rg which to get a gain of 200 we can use 200k and a 1k ohm resistor to give a gain of 201.
+To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a high enough input impedance to the circuit to avoid any significant amount of loading. This is then passed into the non inverting amp which we use the equation (Rf + Rg)/Rg which to get a gain of 147k we can use 100k and 47k ohm resistor in series and a 1k ohm resistor to ground to give a gain of 147.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Operational_amplifier_noninverting.svg/220px-Operational_amplifier_noninverting.svg.png" width="30%">
@@ -109,13 +109,11 @@ These last lines are used to print out the recorded data to the serial monitor. 
 
 | **Mass (g)** | **Voltage (mV)** | **Vout (mV), Gain 10** | **Vout (V), Gain 201** | **A/D (DU)** |
 | :----------: | :--------------: | :--------------------: | :--------------------: | :----------: |
-|      0       |       0.2        |          11.1          |         1.5 \*         |    306.9     |
-|     196      |       0.6        |          11.2          |          1.5           |    306.9     |
-|     506      |       1.2        |          14.7          |          2.13          |   435.798    |
-|     702      |       1.6        |          18.4          |          2.9           |    593.34    |
-|    1,000     |       2.2        |          24.1          |          3.98          |   814.308    |
-
-\*Value stays at 1.5V from 0g to 366g
+|      0       |       0.2        |          08.4          |        1.18          |    241.428   |
+|     196      |       0.6        |          11.9          |         1.72           |    351.912     |
+|     506      |       1.2        |          17.9          |           2.6          |   531.96   |
+|     702      |       1.6        |          21.9          |         3.21           |    656.766    |
+|    1,000     |       2.2        |          27.6          |          4.06          |   830.676    |
 
 ### Excel Graphs
 
@@ -147,7 +145,8 @@ To set up for the demonstration the required equipment is listed below:
 - G-clamp
 - Resistors
   - x2 1M ohms
-  - x4 100k ohms
+  - x3 100k ohms
+  - 47k ohms
   - 1k ohms
 - Arduino Nano and cable
 - Different colour wires
@@ -159,7 +158,7 @@ To set up for the demonstration the required equipment is listed below:
 - Computer (download Arduino IDE)
 - Different weights
 
-### Initial installation of the circuit and code
+### Installation of the circuit and code
 
 1. Collect all the equipment listed above.
 2. For clarity of the circuit, make sure that you use different colours for the wires i.e. red for Vcc, black for ground.
