@@ -8,8 +8,6 @@
    3. [Strain-gauge load cell](#strain-gauge-load-cell)
 2. [Circuit layout on breadboard](#circuit-layout-on-breadboard)
 3. [Block Diagram](#block-diagram)
-   1. [Differential Amplifier](#differential-amplifier)
-   2. [Non-Inverting Amplifier](#non-inverting-amplifier)
 4. [Arduino Code](#arduino-code)
 5. [Excel Spreadsheet and Graphs](#excel-spreadsheet-and-graphs)
 6. [Setup for the demonstration](#setup-for-the-demonstration)
@@ -37,12 +35,6 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 </p>
 
 ## Block Diagram
-
-### Differential Amplifier
-
-Resolution
-
-### Non-Inverting Amplifier
 
 ### Arduino Code
 
@@ -90,8 +82,8 @@ The map function is used to map the input range of the arduino to a 1 to 1000 ra
     Serial.print("Volume of water in tank: ");
     Serial.print(outputml);
     Serial.print(" ml\n");
-}```
-
+}
+```
 These last lines are used to print out the recorded data to the serial monitor. It first prints out the amplified voltage from the load cell then then the volume in of water left in the tank.
 ````
 
@@ -112,7 +104,10 @@ To set up for the demonstration the required equipment is listed below:
   - x4 100k ohms
   - 1k ohms
 - Arduino Nano and cable
-- Different colour wires (red (Vcc), black (ground), yellow (wires for connecting sensor to Arduino))
+- Different colour wires
+  - red for Vcc
+  - black for ground
+  - green for connecting sensor to Arduino
 - Breadboard
 - LM324 Operational Amplifier
 - Computer (download Arduino IDE)
@@ -121,7 +116,7 @@ To set up for the demonstration the required equipment is listed below:
 ### Initial installation of the circuit and code
 
 1. Collect all the equipment listed above.
-2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e., red for Vcc, black for ground and green or other colour (except the 2 colours that already mentioned) for the wiring of the ultrasonic sensor to the Arduino Nano digital pins.
+2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e., red for Vcc, black for ground and y or other colour (except the 2 colours that already mentioned) for the wiring of the ultrasonic sensor to the Arduino Nano digital pins.
 3. Place your Arduino Nano onto the breadboard as well as the 4 wires of the load cell.
 
 - Red wire goes to 5V and black wire goes to the ground
@@ -134,7 +129,7 @@ To set up for the demonstration the required equipment is listed below:
     <img src="images/load-cell-S4.png" width="80%">
 </p>
 
-5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100kohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
+5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100k ohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
     <img src="images/load-cell-S5.png" width="80%">
 </p>
