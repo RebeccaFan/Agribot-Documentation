@@ -44,7 +44,7 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 ### Arduino Code
 
 Download the code in the following:
-[here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/Load_code.zip)
+[here](https://github.com/RebeccaFan/Agribot-Documentation/releases/download/1.0.0/LoadCell_code.zip)
 
 ```
 int dataInPin = A0;
