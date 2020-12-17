@@ -179,8 +179,4 @@ To set up for the demonstration the required equipment is listed below:
 
 ## Load Cell demonstration
 
-<<<<<<< HEAD
 [<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
-=======
-[<img src="https://i9.ytimg.com/vi/c-6xIRmTkGc/mq2.jpg?sqp=CJCm6_4F&rs=AOn4CLCpsGV_17T6HuNdSNGpRdeQIKiiLg" width="60%">](https://youtu.be/c-6xIRmTkGc)
->>>>>>> 203919ab420dbae52ec741fdfa4109956201c0ab
