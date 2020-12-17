@@ -79,7 +79,8 @@ void loop()
 
 The start of the arduino loop code, begins with a 500ms delay before reading in the the voltage on the dataInPin which was previously defined at pin A0 on the arduino nano
 
-```outputml = map(dataIn, 243, 811, 0, 1000);
+```
+    outputml = map(dataIn, 243, 811, 0, 1000);
 
 ```
 
@@ -124,29 +125,30 @@ To set up for the demonstration the required equipment is listed below:
 ### Initial installation of the circuit and code
 
 1. Collect all the equipment listed above.
-2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e., red for Vcc, black for ground and yellow or other colour (except the 2 colours that already mentioned) for the wiring of the ultrasonic sensor to the Arduino Nano digital pins.
+2. For clarity of the circuit, make sure that you use different colours for the wirings. i.e., red for Vcc, black for ground and green or other colour (except the 2 colours that already mentioned) for the wiring of the ultrasonic sensor to the Arduino Nano digital pins.
 3. Place your Arduino Nano onto the breadboard as well as the 4 wires of the load cell.
 
-- Red wire goes to 5V and black wire goes to the ground.
-- Green wire is connected to resistor 100k and into pin 3 (+ve) of amplifier
-- White wire is connected to resistor 100k and into pin 2 (-ve) of amplifier
+- Red wire goes to 5V and black wire goes to the ground
+- Green wire is connected to 100k ohms and into pin 3 (-ve) of amplifier
+- White wire is connected to another 100k ohms and into pin 2 (+ve) of amplifier
+- Red wire of the load cell is connected to the 5V from the Arduino Nano
 
-4. The other connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to 5V and pin 11 is needed to be connected to ground. The resistors that were used are 1M ohms and 100k ohms in series.
-
+4. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 is needed to be connected to ground. The resistors that we used were two 1M ohms and two 100k ohms.
 <p align="center">
     <img src="images/load-cell-S4.png" width="50%">
 </p>
 
-5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 147 we used the resistor values 100k ohms and 47k ohms. 9V battery is used as the voltage source for the non-inverting amplifier part of this circuit. Refer to the diagram below to clearly see the connections.
+5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100kohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
     <img src="images/load-cell-S5.png" width="50%">
 </p>
+
 6. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
 7. Once the code has been verified and uploaded the initial installations is now done and refer to the following steps below to test the sensor
 
 ### Testing
 
-1. Firstly, gather different things that have different weights, i.e., choose weights that are not closely similar. (100g, 400g, 700g and 1kg)
+1. Firstly, gather different things that have different weights, i.e., choose weights that are not closely similar. (196g, 506g, 702g and 1kg)
 2. Verify and upload the code again to the Arduino Nano. Once done, look at the serial monitor in the Arduino IDE. This is where you are going to see the Voltage input values and volume of water in a tank in ml according to the weight that is being tested.
 3. How we tested the load is that we took a plastic bag and inserted it in one of the holes of the load cell, we then place one of the weights (e.g., 1kg) into the bag and observe the serial monitor in the Arduino IDE.
 4. Repeat step 3 but with different weights and see if the output weight that you get is the expected value i.e., almost the same when you measure it on a kitchen scale and using the multi meter.
