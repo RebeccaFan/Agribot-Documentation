@@ -23,7 +23,7 @@
 Load cell sensor is going to be used to measure the weight of the water in a tank. The load cell sensor that we are going to be using is the ARD2-2151 Load Cell. Click [here](https://www.wiltronics.com.au/wp-content/uploads/datasheets/ARD2-2151%20Data%20Sheet.pdf) to see the data sheet.
 
 <p align="center">
-    <img src="images/load-cell-img.jgp" width="50%">
+    <img src="images/load-cell-img.jpg" width="50%">
 </p>
 
 ## How it works
