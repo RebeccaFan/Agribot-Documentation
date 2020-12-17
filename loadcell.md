@@ -107,7 +107,7 @@ These last lines are used to print out the recorded data to the serial monitor. 
 ### Excel Graphs
 
 <p align="center">
-    <img src="images/mass-volts-graph.PNG" width="80%">
+    <img src="images/mass-volt-graph.PNG" width="80%">
 </p>
 
 <p align="center">
