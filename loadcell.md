@@ -9,7 +9,8 @@
 2. [Circuit layout on breadboard](#circuit-layout-on-breadboard)
 3. [Block Diagram](#block-diagram)
 4. [Arduino Code](#arduino-code)
-5. [Excel Spreadsheet and Graphs](#excel-spreadsheet-and-graphs)
+5. [Excel Spreadsheet ](#excel-spreadsheet)
+   1. [Excel Graphs ](#excel-graphs)
 6. [Setup for the demonstration](#setup-for-the-demonstration)
    1. [Equipment for the demonstration](#equipment-for-the-demonstration)
    2. [Initial installation of the circuit and code](#initial-installation-of-the-circuit-and-code)
@@ -36,6 +37,10 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 ## Block Diagram
 
+<p align="center">
+    <img src="images/block-load.png" width="80%">
+</p>
+
 ### Arduino Code
 
 Download the code in the following:
@@ -57,7 +62,7 @@ void setup()
 }
 ```
 
-These few lines set up serial communications between the arduino and the pc so it can display the interpreted data on the serial monitor
+These few lines set up serial communications between the arduino and the pc so it can display the interpreted data on the serial monitor.
 
 ```
 void loop()
@@ -66,15 +71,15 @@ void loop()
     dataIn = analogRead(dataInPin);
 ```
 
-The start of the arduino loop code, begins with a 500ms delay before reading in the the voltage on the dataInPin which was previously defined at pin A0 on the arduino nano
+The start of the arduino loop code, begins with a 500ms delay before reading in the the voltage on the dataInPin which was previously defined at pin A0 on the arduino nano.
 
 ```
-    outputml = map(dataIn, 243, 811, 0, 1000);
+    outputml = map(dataIn, 306, 814, 366, 1000);
 ```
 
-The map function is used to map the input range of the arduino to a 1 to 1000 range for 0 to 1000ml. The input range is 243 to 811 because at 0ml the load cell reads 1.18V while at 1000ml the load cells reads 3.96V to convert this to a digital input multiplying it by the resolution of the Arduino of 204.6 bits which gave a range of 243 to 811 bits. For more information on the map function please see the [documentation](https://www.arduino.cc/reference/en/language/functions/math/map/)
+The map function is used to map the input range of the arduino to a 366 to 1000 range for 0 to 1000ml. The input range is 306 to 814 because at 0ml the load cell reads 1.5V while at 1000ml the load cells reads 3.98V to convert this to a digital input multiplying it by the resolution of the Arduino of 204.6 bits which gave a range of 306 to 814 bits. For more information on the map function please see the [documentation](https://www.arduino.cc/reference/en/language/functions/math/map/)
 
-````
+```
     Serial.print("Voltage Input: ");
     Serial.print(dataIn);
     Serial.print("\t\t\t");
@@ -84,10 +89,38 @@ The map function is used to map the input range of the arduino to a 1 to 1000 ra
     Serial.print(" ml\n");
 }
 ```
-These last lines are used to print out the recorded data to the serial monitor. It first prints out the amplified voltage from the load cell then then the volume in of water left in the tank.
-````
 
-## Excel Spreadsheet and Graphs
+These last lines are used to print out the recorded data to the serial monitor. It first prints out the amplified voltage from the load cell then then the volume in of water left in the tank.
+
+## Excel Spreadsheet
+
+| **Mass (g)** | **Voltage (mV)** | **Vout (mV), Gain 10** | **Vout (V), Gain 200** | **A/D (DU)** |
+| :----------: | :--------------: | :--------------------: | :--------------------: | :----------: |
+|      0       |       0.2        |          11.1          |         1.5 \*         |    306.9     |
+|     196      |       0.6        |          11.2          |          1.5           |    306.9     |
+|     506      |       1.2        |          14.7          |          2.13          |   435.798    |
+|     702      |       1.6        |          18.4          |          2.9           |    593.34    |
+|    1,000     |       2.2        |          24.1          |          3.98          |   814.308    |
+
+\*Value stays at 1.5V from 0g to 366g
+
+### Excel Graphs
+
+<p align="center">
+    <img src="images/mass-volts-graph.PNG" width="80%">
+</p>
+
+<p align="center">
+    <img src="images/diff-amp-graph.PNG" width="80%">
+</p>
+
+<p align="center">
+    <img src="images/diff-non-graph.PNG" width="80%">
+</p>
+
+<p align="center">
+    <img src="images/mass-bits-graph.PNG" width="80%">
+</p>
 
 ## Setup for the demonstration
 
