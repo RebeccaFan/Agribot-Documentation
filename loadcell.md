@@ -22,18 +22,13 @@
 
 Load cell sensor is going to be used to measure the weight of the water in a tank. The load cell sensor that we are going to be using is the ARD2-2151 Load Cell. Click [here](https://www.wiltronics.com.au/wp-content/uploads/datasheets/ARD2-2151%20Data%20Sheet.pdf) to see the data sheet.
 
+<p align="center">
+    <img src="images/load-cell-img.jgp" width="50%">
+</p>
+
 ## How it works
 
 - Load cell is a transducer which measures force and delivers this force as an electrical signal. The load cell is a metal bar and when a load is applied on a bar this will cause the bar to bend. This force will then cause a change in resistance according to the weight of the load. The Wheatstone bridge which is located inside the load cell become unbalance with the change in resistance and causing an increase in differential voltage at the output junction of the bridge. This will then be amplified using the LM324 and code will be written in Arduino IDE to re-scale the signal to weights in ml.
-
-## When to use a load cell
-
-- A load cell measures the weight of objects by measuring the mechanical force. There are different classes to load cells, class A, class B, class C & Class D, depending on both accuracy and capacity of the object that will be weighed.
-
-## Strain-gauge load cell
-
-- Strain gauge load cells are a type of load cell where usually feature four strain gauges in a Wheatstone bridge configuration. The resistances of each strain gauge will be the same.
-- The weight on the load cell is measured when force being applied it deforms the strain gauge in this type of load cell and the deformation is measured, the resistance of the strain gauge varies, causing a change in output voltage. The change in output voltage is measured and converted into readable values using the Arduino.
 
 ## Circuit layout on breadboard
 
@@ -44,6 +39,8 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 ## Block Diagram
 
 ### Differential Amplifier
+
+Resolution
 
 ### Non-Inverting Amplifier
 
@@ -81,7 +78,6 @@ The start of the arduino loop code, begins with a 500ms delay before reading in 
 
 ```
     outputml = map(dataIn, 243, 811, 0, 1000);
-
 ```
 
 The map function is used to map the input range of the arduino to a 1 to 1000 range for 0 to 1000ml. The input range is 243 to 811 because at 0ml the load cell reads 1.18V while at 1000ml the load cells reads 3.96V to convert this to a digital input multiplying it by the resolution of the Arduino of 204.6 bits which gave a range of 243 to 811 bits. For more information on the map function please see the [documentation](https://www.arduino.cc/reference/en/language/functions/math/map/)
