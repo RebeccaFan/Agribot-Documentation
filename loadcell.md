@@ -166,14 +166,14 @@ To set up for the demonstration the required equipment is listed below:
 </p>
 
 6. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
-7. Once the code has been verified and uploaded the initial installations is now done and refer to the following steps below to test the sensor.
+7. Once the code has been verified and uploaded the initial installation is now done and refer to the following steps below to test the sensor.
 
 ### Testing
 
-1. Firstly, gather different things that have different weights, i.e., choose weights that are not closely similar. (196g, 506g, 702g and 1kg)
+1. Firstly, gather different things that have different weights, i.e. choose a wide range of weights. ( e.g. 196g, 506g, 702g and 1kg)
 2. Verify and upload the code again to the Arduino Nano. Once done, look at the serial monitor in the Arduino IDE. This is where you are going to see the Voltage input values and volume of water in a tank in ml according to the weight that is being tested.
-3. How we tested the load is that we took a plastic bag and inserted it in one of the holes of the load cell, we then place one of the weights (e.g., 1kg) into the bag and observe the serial monitor in the Arduino IDE.
-4. Repeat step 3 but with different weights and see if the output weight that you get is the expected value i.e., almost the same when you measure it on a kitchen scale and using the multi meter.
+3. How we tested the load is that we took a plastic bag and inserted it in one of the holes of the load cell, we then place one of the weights (e.g. 1kg) into the bag and observe the serial monitor in the Arduino IDE.
+4. Repeat step 3 but with different weights and see if the output weight that you get is the expected value i.e. almost the same when you measure it on a kitchen scale and using the multi-meter.
 
 ## Load Cell demonstration
 
