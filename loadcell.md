@@ -50,7 +50,7 @@ int dataIn;
 float outputml;
 ```
 
-These first three lines are just defining variables used through out the program
+These first three lines are just defining variables used through out the program.
 dataInPin is set to A0, for this exact code to work you must connect the output of the op-amp to pin A0 on the arduino nano. This is where the voltage will be read in from.
 
 ```
@@ -75,7 +75,7 @@ The start of the arduino loop code, begins with a 500ms delay before reading in 
     outputml = map(dataIn, 306, 814, 366, 1000);
 ```
 
-The map function is used to map the input range of the arduino to a 366 to 1000 range for 0 to 1000ml. The input range is 306 to 814 because at 0ml the load cell reads 1.5V while at 1000ml the load cells reads 3.98V to convert this to a digital input multiplying it by the resolution of the Arduino of 204.6 bits which gave a range of 306 to 814 bits. For more information on the map function please see the [documentation](https://www.arduino.cc/reference/en/language/functions/math/map/)
+The map function is used to map the input range of the arduino to a 306 to 814bits range for 366 to 1000ml. The input range is 306 to 814 because at 0ml the load cell reads 1.5V while at 1000ml the load cells reads 3.98V to convert this to a digital input multiplying it by the resolution of the Arduino of 204.6 bits which gave a range of 306 to 814 bits. For more information on the map function please see the [documentation](https://www.arduino.cc/reference/en/language/functions/math/map/)
 
 ```
     Serial.print("Voltage Input: ");
@@ -176,5 +176,7 @@ To set up for the demonstration the required equipment is listed below:
 4. Repeat step 3 but with different weights and see if the output weight that you get is the expected value i.e. almost the same when you measure it on a kitchen scale and using the multi-meter.
 
 ## Load Cell demonstration
+
+Link to the demonstration of the Load Cell circuit.
 
 [<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
