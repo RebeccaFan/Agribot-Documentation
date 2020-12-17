@@ -12,7 +12,7 @@
    1. [Excel Graphs ](#excel-graphs)
 7. [Setup for the demonstration](#setup-for-the-demonstration)
    1. [Equipment for the demonstration](#equipment-for-the-demonstration)
-   2. [Initial installation of the circuit and code](#initial-installation-of-the-circuit-and-code)
+   2. [Initial installation of the circuit and code](#installation-of-the-circuit-and-code)
    3. [Testing](#testing)
 8. [Load Cell demonstration](#load-cell-demonstration)
 
@@ -36,13 +36,13 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 ## Calculating the gain
 
-To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assuming Rf = Rg and Rin = R1 = R2.
+To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 1500 to reach just less than  5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 147. The equation for the gain of a differential amplifier is Rf/Rin assuming Rf = Rg and Rin = R1 = R2.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Op-Amp_Differential_Amplifier.svg/280px-Op-Amp_Differential_Amplifier.svg.png" width="40%">
 </p>
 
-To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a high enough input impedance to the circuit to avoid any significant amount of loading. This is then passed into the non inverting amp which we use the equation (Rf + Rg)/Rg which to get a gain of 200 we can use 200k and a 1k ohm resistor to give a gain of 201.
+To get a gain of 10 we can use Rf = 1M and Rin = 100k resistors. This gives a high enough input impedance to the circuit to avoid any significant amount of loading. This is then passed into the non inverting amp which we use the equation (Rf + Rg)/Rg which to get a gain of 147k we can use 100k and 47k ohm resistor in series and a 1k ohm resistor to ground to give a gain of 147.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Operational_amplifier_noninverting.svg/220px-Operational_amplifier_noninverting.svg.png" width="30%">
@@ -109,13 +109,11 @@ These last lines are used to print out the recorded data to the serial monitor. 
 
 | **Mass (g)** | **Voltage (mV)** | **Vout (mV), Gain 10** | **Vout (V), Gain 201** | **A/D (DU)** |
 | :----------: | :--------------: | :--------------------: | :--------------------: | :----------: |
-|      0       |       0.2        |          11.1          |         1.5 \*         |    306.9     |
-|     196      |       0.6        |          11.2          |          1.5           |    306.9     |
-|     506      |       1.2        |          14.7          |          2.13          |   435.798    |
-|     702      |       1.6        |          18.4          |          2.9           |    593.34    |
-|    1,000     |       2.2        |          24.1          |          3.98          |   814.308    |
-
-\*Value stays at 1.5V from 0g to 366g
+|      0       |       0.2        |          08.4          |        1.18          |    241.428   |
+|     196      |       0.6        |          11.9          |         1.72           |    351.912     |
+|     506      |       1.2        |          17.9          |           2.6          |   531.96   |
+|     702      |       1.6        |          21.9          |         3.21           |    656.766    |
+|    1,000     |       2.2        |          27.6          |          4.06          |   830.676    |
 
 ### Excel Graphs
 
@@ -147,7 +145,8 @@ To set up for the demonstration the required equipment is listed below:
 - G-clamp
 - Resistors
   - x2 1M ohms
-  - x4 100k ohms
+  - x3 100k ohms
+  - 47k ohms
   - 1k ohms
 - Arduino Nano and cable
 - Different colour wires
@@ -159,20 +158,29 @@ To set up for the demonstration the required equipment is listed below:
 - Computer (download Arduino IDE)
 - Different weights
 
-### installation of the circuit and code
+### Installation of the circuit and code
 
-1. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 needs to be connected to ground. The resistors that we used were two 1M ohms (brown, black, green) and two 100k ohms (brown, black, yellow).
+1. Collect all the equipment listed above.
+2. For clarity of the circuit, make sure that you use different colours for the wires i.e. red for Vcc, black for ground.
+3. Place your Arduino Nano onto the breadboard as well as the 4 wires of the load cell.
+
+- Red wire goes to 5V and black wire goes to the ground
+- Green wire is connected to 100k ohms and into pin 3 (-ve) of amplifier
+- White wire is connected to another 100k ohms and into pin 2 (+ve) of amplifier
+- Red wire of the load cell is connected to the 5V from the Arduino Nano
+
+4. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 needs to be connected to ground. The resistors that we used were two 1M ohms (brown, black, green) and two 100k ohms (brown, black, yellow).
 <p align="center">
     <img src="images/load-cell-S4.png" width="80%">
 </p>
 
-2. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100k ohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
+5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100k ohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
     <img src="images/load-cell-S5.png" width="80%">
 </p>
 
-3. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
-4. Once the code has been verified and uploaded the initial installation is now done and refer to the following steps below to test the sensor.
+6. Download Arduino IDE and copy the code provided in this page for the load cell sensor, if you are having problems with the settings in Arduino refer to the “start with basic” in the main page.
+7. Once the code has been verified and uploaded the initial installation is now done and refer to the following steps below to test the sensor.
 
 ### Testing
 
@@ -186,3 +194,10 @@ To set up for the demonstration the required equipment is listed below:
 Link to the demonstration of the Load Cell circuit.
 
 [<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
+
+## Trouble Shooting
+When working in hardware issues and inconsistencies can occur that could not be predicted in theory. One such issue we ran into when demo-ing this circuit which we had not experienced the day before when recording the data, was that the amplifier wouldn't change for anything less than about 360ml this was most likely down to an issue with the amplifier itself. After verfiying the circuit has been built correctly, if you are still experiencing issues I would advise replacing individual hardware components, starting with the op-amp as this is more likely to fail than any of the resistors. Below is an example of the output graph produced with the error in the system.
+
+<p align="center">
+    <img src="images/diff-non-graph.PNG" width="80%">
+</p>
