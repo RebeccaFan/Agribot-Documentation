@@ -36,7 +36,7 @@ Load cell sensor is going to be used to measure the weight of the water in a tan
 
 ## Calculating the gain
 
-To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assunming Rf = Rg and Rin = R1 = R2.
+To calculate an appropriate gain of the system, for a resolution of 1g as in this system. The arduino has a resolution of 5mV so we want 1g = 5mV. To find our max value we need to find what 1000g should be equal to. For a resolution of 1g that's (1000\*.005)/1 which gives 5V. With no amplification the load cell outputs 2.2mV so it means amplifying it by approximately 2000 to reach 5V. This can be achieved in many ways. In this example we will use a differential amplifier with a gain of 10 and a non-inverting amplifier with a gain of 200. The equation for the gain of a differential amplifier is Rf/Rin assuming Rf = Rg and Rin = R1 = R2.
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Op-Amp_Differential_Amplifier.svg/280px-Op-Amp_Differential_Amplifier.svg.png" width="40%">
@@ -175,7 +175,7 @@ To set up for the demonstration the required equipment is listed below:
     <img src="images/load-cell-S4.png" width="80%">
 </p>
 
-5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100kohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
+5. The output of the differential op-amp which is in pin 1 is then connected the (+ve) pin of the non-inverting amplifier. To get the gain of 200 we used the resistor values two 100k ohms. 9V battery is used as the voltage source. Refer to the diagram below to clearly see the connections.
 <p align="center">
     <img src="images/load-cell-S5.png" width="80%">
 </p>
