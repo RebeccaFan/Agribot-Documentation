@@ -12,9 +12,10 @@
    1. [Excel Graphs ](#excel-graphs)
 7. [Setup for the demonstration](#setup-for-the-demonstration)
    1. [Equipment for the demonstration](#equipment-for-the-demonstration)
-   2. [Installation of the circuit and code](#installation-of-the-circuit-and-code)
+   2. [Installation of the circuit](#installation-of-the-circuit)
    3. [Testing](#testing)
 8. [Load Cell demonstration](#load-cell-demonstration)
+9. [Troubleshooting](#troubleshooting)
 
 # Introduction
 
@@ -158,7 +159,7 @@ To set up for the demonstration the required equipment is listed below:
 - Computer (download Arduino IDE)
 - Different weights
 
-### Installation of the circuit and code
+### Installation of the circuit
 
 1. The connections of the resistors for the differential amp are shown in the diagram below this will give us a gain of 10. Note that pin 4 is needed to be connected to the 9V and pin 11 needs to be connected to ground. The resistors that we used were two 1M ohms (brown, black, green) and two 100k ohms (brown, black, yellow).
 <p align="center">
@@ -183,7 +184,7 @@ Link to the demonstration of the Load Cell circuit.
 
 [<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
 
-## Trouble Shooting
+## Troubleshooting
 When working in hardware issues and inconsistencies can occur that could not be predicted in theory. One such issue we ran into when demo-ing this circuit which we had not experienced the day before when recording the data, was that the amplifier wouldn't change for anything less than about 360ml this was most likely down to an issue with the amplifier itself. After verfiying the circuit has been built correctly, if you are still experiencing issues I would advise replacing individual hardware components, starting with the op-amp as this is more likely to fail than any of the resistors.Below is an example of the output graph produced with the error in the system.
 
 <p align="center">
