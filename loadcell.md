@@ -184,4 +184,8 @@ Link to the demonstration of the Load Cell circuit.
 [<img src="images/demo-img.jpg" width="60%">](https://www.youtube.com/watch?v=c-6xIRmTkGc)
 
 ## Trouble Shooting
-When working in hardware issues and inconsistencies can occur that could not be predicted in theory. One such issue we ran into when demo-ing this circuit which we had not experienced the day before when recording the data, was that the amplifier wouldn't change for anything less than about 360ml this was most likely down to an issue with the amplifier itself. After verfiying the circuit has been built correctly, if you are still experiencing issues I would advise replacing individual hardware components, starting with the op-amp as this is more likely to fail than any of the resistors.
+When working in hardware issues and inconsistencies can occur that could not be predicted in theory. One such issue we ran into when demo-ing this circuit which we had not experienced the day before when recording the data, was that the amplifier wouldn't change for anything less than about 360ml this was most likely down to an issue with the amplifier itself. After verfiying the circuit has been built correctly, if you are still experiencing issues I would advise replacing individual hardware components, starting with the op-amp as this is more likely to fail than any of the resistors.Below is an example of the output graph produced with the error in the system.
+
+<p align="center">
+    <img src="images/diff-non-graph-old.PNG" width="80%">
+</p>
